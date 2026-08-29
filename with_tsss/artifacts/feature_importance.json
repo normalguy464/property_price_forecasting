@@ -1,0 +1,534 @@
+[
+  {
+    "feature": "comparable_weighted_estimated_price_365d",
+    "importance": 23.146998948806626
+  },
+  {
+    "feature": "comparable_weighted_raw_price_365d",
+    "importance": 22.182085309710377
+  },
+  {
+    "feature": "alley_width_m",
+    "importance": 8.875126102605096
+  },
+  {
+    "feature": "log_alley_width_m",
+    "importance": 7.56241585282604
+  },
+  {
+    "feature": "market_ward_estimated_p75_365d",
+    "importance": 3.261782265346231
+  },
+  {
+    "feature": "distance_to_main_road_m",
+    "importance": 2.640054512746795
+  },
+  {
+    "feature": "ward_new",
+    "importance": 2.47009666884299
+  },
+  {
+    "feature": "area_m2",
+    "importance": 1.6740755113574965
+  },
+  {
+    "feature": "ward_old",
+    "importance": 1.5941632792232305
+  },
+  {
+    "feature": "market_ward_estimated_median_180d",
+    "importance": 1.5656971049239876
+  },
+  {
+    "feature": "plot_rectangularity",
+    "importance": 1.3768087735068042
+  },
+  {
+    "feature": "market_ward_raw_median_90d",
+    "importance": 1.2457210418921678
+  },
+  {
+    "feature": "log_area_m2",
+    "importance": 1.2063691696015653
+  },
+  {
+    "feature": "construction_count",
+    "importance": 1.1337790258656286
+  },
+  {
+    "feature": "business_advantage",
+    "importance": 1.0998629006605993
+  },
+  {
+    "feature": "market_district_estimated_p75_180d",
+    "importance": 1.057045686843303
+  },
+  {
+    "feature": "log_length_m",
+    "importance": 0.9333800965311134
+  },
+  {
+    "feature": "comparable_best_distance_365d",
+    "importance": 0.9105827386632552
+  },
+  {
+    "feature": "market_ward_estimated_p25_90d",
+    "importance": 0.9059217978844651
+  },
+  {
+    "feature": "frontage_length_ratio",
+    "importance": 0.8304170761596134
+  },
+  {
+    "feature": "market_district_estimated_p25_90d",
+    "importance": 0.6919337899886211
+  },
+  {
+    "feature": "length_m",
+    "importance": 0.6783482434040677
+  },
+  {
+    "feature": "road",
+    "importance": 0.6775562324864709
+  },
+  {
+    "feature": "market_district_listing_raw_median_365d",
+    "importance": 0.6048828773101078
+  },
+  {
+    "feature": "frontage_m",
+    "importance": 0.4382961918214558
+  },
+  {
+    "feature": "market_ward_estimated_p75_90d",
+    "importance": 0.4290909500607432
+  },
+  {
+    "feature": "market_district_count_90d",
+    "importance": 0.4207333466965394
+  },
+  {
+    "feature": "market_district_estimated_p75_365d",
+    "importance": 0.39296191329641766
+  },
+  {
+    "feature": "market_district_estimated_p25_365d",
+    "importance": 0.3388543037035236
+  },
+  {
+    "feature": "market_road_estimated_p25_365d",
+    "importance": 0.3169592144404344
+  },
+  {
+    "feature": "district",
+    "importance": 0.3134655512628738
+  },
+  {
+    "feature": "comparable_estimated_mad_365d",
+    "importance": 0.28386570371564146
+  },
+  {
+    "feature": "log_distance_to_main_road_m",
+    "importance": 0.27930898634711704
+  },
+  {
+    "feature": "market_district_listing_count_90d",
+    "importance": 0.26006626129753657
+  },
+  {
+    "feature": "frontage_count",
+    "importance": 0.24906608810594524
+  },
+  {
+    "feature": "other_road_or_alley_facing",
+    "importance": 0.24080769342544242
+  },
+  {
+    "feature": "market_backoff_raw_median_365d",
+    "importance": 0.23650475887101424
+  },
+  {
+    "feature": "market_ward_estimated_p75_180d",
+    "importance": 0.22933939634360265
+  },
+  {
+    "feature": "market_ward_estimated_p25_365d",
+    "importance": 0.2146377295919386
+  },
+  {
+    "feature": "log_frontage_m",
+    "importance": 0.20876114720965758
+  },
+  {
+    "feature": "market_district_estimated_p25_180d",
+    "importance": 0.19886424004984646
+  },
+  {
+    "feature": "market_road_estimated_p75_180d",
+    "importance": 0.19847150855615428
+  },
+  {
+    "feature": "market_ward_estimated_median_365d",
+    "importance": 0.19477633718230503
+  },
+  {
+    "feature": "market_ward_count_90d",
+    "importance": 0.19131021458963737
+  },
+  {
+    "feature": "month_index",
+    "importance": 0.18093675970138012
+  },
+  {
+    "feature": "market_district_transaction_raw_median_180d",
+    "importance": 0.17866411416582523
+  },
+  {
+    "feature": "quality_geometry_ratio_high",
+    "importance": 0.17841912019252282
+  },
+  {
+    "feature": "market_backoff_count_365d",
+    "importance": 0.17125020722271447
+  },
+  {
+    "feature": "comparable_weighted_age_days_365d",
+    "importance": 0.1703188361497941
+  },
+  {
+    "feature": "market_backoff_estimated_median_90d",
+    "importance": 0.16951758969632444
+  },
+  {
+    "feature": "market_road_estimated_p75_90d",
+    "importance": 0.16934652993624177
+  },
+  {
+    "feature": "market_backoff_estimated_median_365d",
+    "importance": 0.16834591532941878
+  },
+  {
+    "feature": "plot_shape",
+    "importance": 0.16682462553471217
+  },
+  {
+    "feature": "market_backoff_raw_median_180d",
+    "importance": 0.1536096926061628
+  },
+  {
+    "feature": "price_position",
+    "importance": 0.14894439717043717
+  },
+  {
+    "feature": "market_road_estimated_p25_180d",
+    "importance": 0.14734477824086545
+  },
+  {
+    "feature": "comparable_same_ward_share_365d",
+    "importance": 0.14357136618701133
+  },
+  {
+    "feature": "market_district_listing_count_365d",
+    "importance": 0.13749555893574175
+  },
+  {
+    "feature": "other_dead_end_alley",
+    "importance": 0.1365904416000502
+  },
+  {
+    "feature": "market_road_estimated_p25_90d",
+    "importance": 0.13532118328351952
+  },
+  {
+    "feature": "market_road_count_180d",
+    "importance": 0.1349044893646777
+  },
+  {
+    "feature": "market_road_estimated_p75_365d",
+    "importance": 0.13451357624788626
+  },
+  {
+    "feature": "market_backoff_count_90d",
+    "importance": 0.12437382698378031
+  },
+  {
+    "feature": "market_road_estimated_median_365d",
+    "importance": 0.11996313711053867
+  },
+  {
+    "feature": "market_district_listing_count_180d",
+    "importance": 0.11984823770145363
+  },
+  {
+    "feature": "market_district_count_365d",
+    "importance": 0.11963398603811906
+  },
+  {
+    "feature": "market_district_transaction_raw_median_90d",
+    "importance": 0.11913644833204125
+  },
+  {
+    "feature": "market_district_raw_median_365d",
+    "importance": 0.11655227152300542
+  },
+  {
+    "feature": "other_is_none",
+    "importance": 0.10779653103675346
+  },
+  {
+    "feature": "market_ward_count_180d",
+    "importance": 0.10646947967304471
+  },
+  {
+    "feature": "market_road_estimated_median_180d",
+    "importance": 0.10558881156224013
+  },
+  {
+    "feature": "market_ward_count_365d",
+    "importance": 0.10536683441101322
+  },
+  {
+    "feature": "market_ward_raw_median_365d",
+    "importance": 0.10172175327093656
+  },
+  {
+    "feature": "market_backoff_count_180d",
+    "importance": 0.09809440028318156
+  },
+  {
+    "feature": "market_ward_age_min_90d",
+    "importance": 0.09708200720100109
+  },
+  {
+    "feature": "market_ward_raw_median_180d",
+    "importance": 0.09141118252089812
+  },
+  {
+    "feature": "other_near_tomb",
+    "importance": 0.0893822613863799
+  },
+  {
+    "feature": "market_road_raw_median_180d",
+    "importance": 0.08381931853307119
+  },
+  {
+    "feature": "market_district_raw_median_180d",
+    "importance": 0.08271858245228049
+  },
+  {
+    "feature": "market_district_transaction_count_180d",
+    "importance": 0.0793507618254025
+  },
+  {
+    "feature": "market_road_raw_median_365d",
+    "importance": 0.07412805041193547
+  },
+  {
+    "feature": "market_district_transaction_count_365d",
+    "importance": 0.06885643113741399
+  },
+  {
+    "feature": "market_district_estimated_median_365d",
+    "importance": 0.06882792514203248
+  },
+  {
+    "feature": "market_road_count_365d",
+    "importance": 0.06829894572084354
+  },
+  {
+    "feature": "comparable_same_road_share_365d",
+    "importance": 0.06162324788440686
+  },
+  {
+    "feature": "market_ward_estimated_median_90d",
+    "importance": 0.060929407189111974
+  },
+  {
+    "feature": "market_district_estimated_median_90d",
+    "importance": 0.05506534793661559
+  },
+  {
+    "feature": "month_sin",
+    "importance": 0.05365373910440552
+  },
+  {
+    "feature": "market_backoff_raw_median_90d",
+    "importance": 0.053535188736681304
+  },
+  {
+    "feature": "market_road_raw_median_90d",
+    "importance": 0.05274096090446779
+  },
+  {
+    "feature": "market_road_age_min_90d",
+    "importance": 0.051095171253833546
+  },
+  {
+    "feature": "land_use",
+    "importance": 0.05047899265351048
+  },
+  {
+    "feature": "market_district_transaction_count_90d",
+    "importance": 0.04965258519081277
+  },
+  {
+    "feature": "market_road_age_min_365d",
+    "importance": 0.047258837641491025
+  },
+  {
+    "feature": "market_ward_age_min_180d",
+    "importance": 0.044753769567431684
+  },
+  {
+    "feature": "market_ward_estimated_p25_180d",
+    "importance": 0.04050232161081334
+  },
+  {
+    "feature": "market_road_estimated_median_90d",
+    "importance": 0.03821123985815293
+  },
+  {
+    "feature": "market_district_count_180d",
+    "importance": 0.038032047231043746
+  },
+  {
+    "feature": "market_backoff_estimated_median_180d",
+    "importance": 0.03705613211147673
+  },
+  {
+    "feature": "road_segment",
+    "importance": 0.03436321675420764
+  },
+  {
+    "feature": "market_road_count_90d",
+    "importance": 0.03410200846935029
+  },
+  {
+    "feature": "month_cos",
+    "importance": 0.032567630178585535
+  },
+  {
+    "feature": "market_road_age_min_180d",
+    "importance": 0.02704262312528191
+  },
+  {
+    "feature": "market_district_raw_median_90d",
+    "importance": 0.023065707968041197
+  },
+  {
+    "feature": "market_district_estimated_median_180d",
+    "importance": 0.023045024267641226
+  },
+  {
+    "feature": "other_unrecognized_area",
+    "importance": 0.022781700743616722
+  },
+  {
+    "feature": "market_district_estimated_p75_90d",
+    "importance": 0.0155212242485668
+  },
+  {
+    "feature": "other_park_opposite",
+    "importance": 0.013950902087269665
+  },
+  {
+    "feature": "market_district_listing_raw_median_180d",
+    "importance": 0.013663166035523535
+  },
+  {
+    "feature": "market_district_transaction_raw_median_365d",
+    "importance": 0.01338353190492504
+  },
+  {
+    "feature": "market_district_age_min_90d",
+    "importance": 0.012952613348385466
+  },
+  {
+    "feature": "effective_quarter",
+    "importance": 0.012673282342191295
+  },
+  {
+    "feature": "other_planning_issue",
+    "importance": 0.011931454089095041
+  },
+  {
+    "feature": "market_backoff_level_90d",
+    "importance": 0.009533839837483312
+  },
+  {
+    "feature": "market_backoff_level_180d",
+    "importance": 0.006153706138029673
+  },
+  {
+    "feature": "market_district_age_min_180d",
+    "importance": 0.006024667780032702
+  },
+  {
+    "feature": "market_backoff_level_365d",
+    "importance": 0.005695389770445301
+  },
+  {
+    "feature": "market_district_age_min_365d",
+    "importance": 0.004224415446581643
+  },
+  {
+    "feature": "comparable_count_365d",
+    "importance": 0.0032437229947198305
+  },
+  {
+    "feature": "other_near_temple",
+    "importance": 0.002848097166838919
+  },
+  {
+    "feature": "quality_frontage_outside_review_range",
+    "importance": 0.0007434035903458916
+  },
+  {
+    "feature": "effective_month",
+    "importance": 0.00014446391957852878
+  },
+  {
+    "feature": "market_district_listing_raw_median_90d",
+    "importance": 0.0001131690104579586
+  },
+  {
+    "feature": "quality_access_outside_review_range",
+    "importance": 5.514033139423472e-05
+  },
+  {
+    "feature": "is_direct_main_road",
+    "importance": 0.0
+  },
+  {
+    "feature": "ward_old_missing",
+    "importance": 0.0
+  },
+  {
+    "feature": "road_segment_missing",
+    "importance": 0.0
+  },
+  {
+    "feature": "other_main_axis",
+    "importance": 0.0
+  },
+  {
+    "feature": "effective_year",
+    "importance": 0.0
+  },
+  {
+    "feature": "quality_geometry_ratio_low",
+    "importance": 0.0
+  },
+  {
+    "feature": "quality_area_outside_review_range",
+    "importance": 0.0
+  },
+  {
+    "feature": "quality_length_outside_review_range",
+    "importance": 0.0
+  },
+  {
+    "feature": "market_ward_age_min_365d",
+    "importance": 0.0
+  }
+]

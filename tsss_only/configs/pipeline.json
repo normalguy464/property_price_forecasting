@@ -1,0 +1,34 @@
+{
+  "source_file": "../../Train_noi.xlsx",
+  "source_sheet": "Sheet1",
+  "eligible_warehouse_class": "TSSS",
+  "target_column": "Đơn giá quyền sử dụng đất (đ/m2)1",
+  "target_unit": "VND/m2",
+  "prediction_object": "TSSS",
+  "as_of_column": "Thời điểm hiệu lực",
+  "date_format": "%d/%m/%Y",
+  "test_start": "2025-05-01",
+  "test_end": "2025-07-31",
+  "official_reference_vnd_m2": 687200000,
+  "random_seed": 42,
+  "primary_metric": "mape",
+  "one_hot_min_frequency": 5,
+  "ridge_alpha": 1.0,
+  "catboost": {
+    "iterations": 600,
+    "depth": 6,
+    "learning_rate": 0.08,
+    "l2_leaf_reg": 8.0,
+    "random_strength": 1.0,
+    "bagging_temperature": 1.0,
+    "border_count": 128,
+    "max_ctr_complexity": 1,
+    "rsm": 0.8,
+    "early_stopping_rounds": 50,
+    "thread_count": 4
+  },
+  "rare_price_band": {
+    "max_weight": 2.0,
+    "oversample_max_multiplier": 2.0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source_file": "../../Train_noi.xlsx",
+  "source_sheet": "Sheet1",
+  "eligible_warehouse_class": "TSTĐ",
+  "target_column": "Đơn giá quyền sử dụng đất (đ/m2)1",
+  "target_unit": "VND/m2",
+  "prediction_object": "TSTĐ",
+  "as_of_column": "Thời điểm hiệu lực",
+  "date_format": "%d/%m/%Y",
+  "test_start": "2025-05-01",
+  "test_end": "2025-07-31",
+  "official_reference_vnd_m2": 687200000,
+  "use_tsss": false,
+  "inference_provided_columns": [
+    "Lợi thế kinh doanh",
+    "Vị trí trong khung giá"
+  ]
+}

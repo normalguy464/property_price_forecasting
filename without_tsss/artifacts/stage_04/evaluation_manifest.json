@@ -1,0 +1,13 @@
+{
+  "evaluation_run_count": 1,
+  "evaluated_at_utc": "2026-08-09T16:38:26.419066+00:00",
+  "test_rows": 1000,
+  "test_date_min": "2025-05-04",
+  "test_date_max": "2025-07-31",
+  "development_rows": 6025,
+  "model_sha256": "a5794878956eb7996103293b6313346b770cbdb9fe0585d6aac73d5d5ca61ca0",
+  "test_predictions_sha256": "565fd8f79b82a0830805b16174f946cba01377341503a1707d3b4e4d10abd8e1",
+  "test_was_used_for_fit_tuning_or_calibration": false,
+  "test_was_used_for_final_evaluation_only": true,
+  "post_evaluation_policy_refresh": "rare_ward_manual_review_without_reprediction"
+}

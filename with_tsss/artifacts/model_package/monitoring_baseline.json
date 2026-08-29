@@ -1,0 +1,36 @@
+{
+  "reference_population": "development_2024_03_to_2025_04",
+  "market_feature_quantiles": {
+    "market_road_count_365d": {
+      "0.05": 0.0,
+      "0.5": 12.0,
+      "0.95": 104.0
+    },
+    "market_backoff_count_365d": {
+      "0.05": 6.0,
+      "0.5": 35.0,
+      "0.95": 273.60000000000036
+    },
+    "comparable_count_365d": {
+      "0.05": 5.0,
+      "0.5": 5.0,
+      "0.95": 5.0
+    },
+    "comparable_best_distance_365d": {
+      "0.05": 0.1466014284357796,
+      "0.5": 0.744082879622298,
+      "0.95": 3.0236327325631946
+    }
+  },
+  "reused_test_prediction_quantiles": {
+    "0.05": 48363046.262753524,
+    "0.5": 89147103.87445438,
+    "0.95": 245761650.6827733
+  },
+  "drift_thresholds": {
+    "psi_warning": 0.2,
+    "missing_rate_absolute_change_warning": 0.05,
+    "market_coverage_rate_change_warning": 0.1,
+    "prediction_median_relative_change_warning": 0.2
+  }
+}

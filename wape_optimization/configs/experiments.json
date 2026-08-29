@@ -1,0 +1,33 @@
+{
+  "base_cleaned_file": "../without_tsss/artifacts/stage_02/cleaned_tstd.jsonl.gz",
+  "base_contract_file": "../without_tsss/artifacts/stage_02/data_contract.json",
+  "split_file": "../without_tsss/artifacts/stage_02/split_manifest.json",
+  "without_tsss_selected_file": "../without_tsss/artifacts/stage_03/selected_model.json",
+  "with_tsss_feature_file": "../with_tsss/artifacts/market_features.jsonl.gz",
+  "with_tsss_feature_manifest_file": "../with_tsss/artifacts/feature_manifest.json",
+  "with_tsss_oof_file": "../with_tsss/artifacts/oof_predictions.jsonl.gz",
+  "with_tsss_test_file": "../with_tsss/artifacts/reused_test_predictions.jsonl.gz",
+  "with_tsss_model_file": "../with_tsss/artifacts/model.cbm",
+  "with_tsss_model_manifest_file": "../with_tsss/artifacts/model_manifest.json",
+  "label_availability_lag_days": 7,
+  "history_windows_days": [90, 180, 365],
+  "history_road_min_count": 3,
+  "history_ward_min_count": 5,
+  "history_district_min_count": 10,
+  "random_seed": 42,
+  "catboost": {
+    "iterations": 500,
+    "depth": 5,
+    "learning_rate": 0.12,
+    "l2_leaf_reg": 20.0,
+    "random_strength": 0.3,
+    "bagging_temperature": 0.3,
+    "border_count": 128,
+    "max_ctr_complexity": 1,
+    "rsm": 0.8,
+    "early_stopping_rounds": 50,
+    "thread_count": 4
+  },
+  "blend_weights": [0.25, 0.5, 0.75],
+  "target_wape": 0.10
+}

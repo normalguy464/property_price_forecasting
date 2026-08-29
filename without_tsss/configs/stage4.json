@@ -1,0 +1,53 @@
+{
+  "test_start": "2025-05-01",
+  "test_end": "2025-07-31",
+  "expected_test_date_min": "2025-05-04",
+  "expected_test_date_max": "2025-07-31",
+  "expected_test_rows": 1000,
+  "model_path": "artifacts/stage_03/model/ridge_model.joblib",
+  "cleaned_data_path": "artifacts/stage_02/cleaned_tstd.jsonl.gz",
+  "oof_path": "artifacts/stage_03/oof_predictions.jsonl.gz",
+  "selected_model_path": "artifacts/stage_03/selected_model.json",
+  "output_directory": "artifacts/stage_04",
+  "calibration_levels": [0.8, 0.9, 0.95],
+  "primary_interval_level": 0.9,
+  "road_rare_min_count": 5,
+  "ward_rare_min_count": 10,
+  "numeric_lower_quantile": 0.005,
+  "numeric_upper_quantile": 0.995,
+  "high_price_review_vnd_m2": 200000000,
+  "wide_interval_ratio": 0.75,
+  "supported_as_of_start": "2025-05-01",
+  "supported_as_of_end": "2025-07-31",
+  "acceptance": {
+    "mae_vnd_m2_max": 19052512,
+    "wape_max": 0.18,
+    "within_20pct_min": 0.70
+  },
+  "drift_thresholds": {
+    "psi_warning": 0.20,
+    "unseen_category_rate_warning": 0.05,
+    "missing_rate_absolute_change_warning": 0.05,
+    "prediction_median_relative_change_warning": 0.20
+  },
+  "example_input": {
+    "as_of_date": "2025-07-15",
+    "district": "Thành phố Thủ Đức",
+    "ward_old": "Phường Phú Hữu",
+    "ward_new": "Phường Long Trường",
+    "road": "Nguyễn Duy Trinh - Quận 9 cũ",
+    "road_segment": "Trọn đường",
+    "price_position": "VT2",
+    "land_use": "Đất ở đô thị",
+    "plot_shape": "Cân đối",
+    "business_advantage": "Trung bình",
+    "area_m2": 80.4,
+    "frontage_m": 4.7,
+    "length_m": 17.06,
+    "frontage_count": 1,
+    "distance_to_main_road_m": 100,
+    "alley_width_m": 7,
+    "construction_count": 1,
+    "other_factors": "Không"
+  }
+}

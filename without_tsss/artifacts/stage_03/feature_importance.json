@@ -1,0 +1,1290 @@
+{
+  "selected_model": "ridge",
+  "importance_type": "ridge_absolute_standardized_coefficients",
+  "features": [
+    {
+      "feature": "road",
+      "absolute_importance": 24.98841488694156,
+      "signed_sum": 1.50712775592865e-14,
+      "max_absolute_coefficient": 0.5492440154836956
+    },
+    {
+      "feature": "road_segment",
+      "absolute_importance": 11.25610444362668,
+      "signed_sum": -7.26111878956992e-14,
+      "max_absolute_coefficient": 0.2756816146962023
+    },
+    {
+      "feature": "ward_old",
+      "absolute_importance": 9.574095406198486,
+      "signed_sum": 1.3239409568654992e-14,
+      "max_absolute_coefficient": 0.35778789132505273
+    },
+    {
+      "feature": "ward_new",
+      "absolute_importance": 8.856072053513675,
+      "signed_sum": -2.1975476993674192e-14,
+      "max_absolute_coefficient": 0.6898526390979521
+    },
+    {
+      "feature": "district",
+      "absolute_importance": 4.045886014890492,
+      "signed_sum": -3.907985046680551e-14,
+      "max_absolute_coefficient": 0.5821796816580066
+    },
+    {
+      "feature": "business_advantage",
+      "absolute_importance": 0.3574560955796345,
+      "signed_sum": 8.279488206142105e-14,
+      "max_absolute_coefficient": 0.16806296449345232
+    },
+    {
+      "feature": "log_alley_width_m",
+      "absolute_importance": 0.2596824328259784,
+      "signed_sum": 0.2596824328259784,
+      "max_absolute_coefficient": 0.2596824328259784
+    },
+    {
+      "feature": "price_position",
+      "absolute_importance": 0.23945684235594336,
+      "signed_sum": -1.5920598173124745e-13,
+      "max_absolute_coefficient": 0.11972842117789206
+    },
+    {
+      "feature": "plot_shape",
+      "absolute_importance": 0.16804252869940461,
+      "signed_sum": 1.5920598173124745e-13,
+      "max_absolute_coefficient": 0.06278315536079894
+    },
+    {
+      "feature": "land_use",
+      "absolute_importance": 0.15554810782448492,
+      "signed_sum": 1.3178347302300608e-13,
+      "max_absolute_coefficient": 0.07777405391230835
+    },
+    {
+      "feature": "log_length_m",
+      "absolute_importance": 0.08698351233852213,
+      "signed_sum": -0.08698351233852213,
+      "max_absolute_coefficient": 0.08698351233852213
+    },
+    {
+      "feature": "log_area_m2",
+      "absolute_importance": 0.0523101530778411,
+      "signed_sum": -0.0523101530778411,
+      "max_absolute_coefficient": 0.0523101530778411
+    },
+    {
+      "feature": "alley_width_m",
+      "absolute_importance": 0.05112915444991984,
+      "signed_sum": -0.05112915444991984,
+      "max_absolute_coefficient": 0.05112915444991984
+    },
+    {
+      "feature": "log_distance_to_main_road_m",
+      "absolute_importance": 0.031240122636909298,
+      "signed_sum": -0.031240122636909298,
+      "max_absolute_coefficient": 0.031240122636909298
+    },
+    {
+      "feature": "frontage_length_ratio",
+      "absolute_importance": 0.028123427770859816,
+      "signed_sum": -0.028123427770859816,
+      "max_absolute_coefficient": 0.028123427770859816
+    },
+    {
+      "feature": "construction_count",
+      "absolute_importance": 0.02524274269390243,
+      "signed_sum": 0.02524274269390243,
+      "max_absolute_coefficient": 0.02524274269390243
+    },
+    {
+      "feature": "is_direct_main_road",
+      "absolute_importance": 0.024317503344363414,
+      "signed_sum": -0.024317503344363414,
+      "max_absolute_coefficient": 0.024317503344363414
+    },
+    {
+      "feature": "length_m",
+      "absolute_importance": 0.02235425379308666,
+      "signed_sum": 0.02235425379308666,
+      "max_absolute_coefficient": 0.02235425379308666
+    },
+    {
+      "feature": "other_road_or_alley_facing",
+      "absolute_importance": 0.018495197837680475,
+      "signed_sum": -0.018495197837680475,
+      "max_absolute_coefficient": 0.018495197837680475
+    },
+    {
+      "feature": "effective_quarter",
+      "absolute_importance": 0.018329815861484043,
+      "signed_sum": 0.018329815861484043,
+      "max_absolute_coefficient": 0.018329815861484043
+    },
+    {
+      "feature": "plot_rectangularity",
+      "absolute_importance": 0.017255986606721913,
+      "signed_sum": -0.017255986606721913,
+      "max_absolute_coefficient": 0.017255986606721913
+    },
+    {
+      "feature": "frontage_count",
+      "absolute_importance": 0.01310228915210869,
+      "signed_sum": 0.01310228915210869,
+      "max_absolute_coefficient": 0.01310228915210869
+    },
+    {
+      "feature": "log_frontage_m",
+      "absolute_importance": 0.01243377970887816,
+      "signed_sum": 0.01243377970887816,
+      "max_absolute_coefficient": 0.01243377970887816
+    },
+    {
+      "feature": "effective_year",
+      "absolute_importance": 0.011474369843670383,
+      "signed_sum": 0.011474369843670383,
+      "max_absolute_coefficient": 0.011474369843670383
+    },
+    {
+      "feature": "other_near_tomb",
+      "absolute_importance": 0.010025221655522892,
+      "signed_sum": -0.010025221655522892,
+      "max_absolute_coefficient": 0.010025221655522892
+    },
+    {
+      "feature": "month_index",
+      "absolute_importance": 0.009618439516198715,
+      "signed_sum": 0.009618439516198715,
+      "max_absolute_coefficient": 0.009618439516198715
+    },
+    {
+      "feature": "other_dead_end_alley",
+      "absolute_importance": 0.009571424057801422,
+      "signed_sum": -0.009571424057801422,
+      "max_absolute_coefficient": 0.009571424057801422
+    },
+    {
+      "feature": "quality_access_outside_review_range",
+      "absolute_importance": 0.008352676887430804,
+      "signed_sum": -0.008352676887430804,
+      "max_absolute_coefficient": 0.008352676887430804
+    },
+    {
+      "feature": "month_cos",
+      "absolute_importance": 0.008009092108628475,
+      "signed_sum": -0.008009092108628475,
+      "max_absolute_coefficient": 0.008009092108628475
+    },
+    {
+      "feature": "other_unrecognized_area",
+      "absolute_importance": 0.007553692664743838,
+      "signed_sum": 0.007553692664743838,
+      "max_absolute_coefficient": 0.007553692664743838
+    },
+    {
+      "feature": "quality_geometry_ratio_high",
+      "absolute_importance": 0.006148623837634397,
+      "signed_sum": -0.006148623837634397,
+      "max_absolute_coefficient": 0.006148623837634397
+    },
+    {
+      "feature": "quality_frontage_outside_review_range",
+      "absolute_importance": 0.00613000982404112,
+      "signed_sum": -0.00613000982404112,
+      "max_absolute_coefficient": 0.00613000982404112
+    },
+    {
+      "feature": "effective_month",
+      "absolute_importance": 0.006127254439023652,
+      "signed_sum": -0.006127254439023652,
+      "max_absolute_coefficient": 0.006127254439023652
+    },
+    {
+      "feature": "month_sin",
+      "absolute_importance": 0.006046479778575606,
+      "signed_sum": 0.006046479778575606,
+      "max_absolute_coefficient": 0.006046479778575606
+    },
+    {
+      "feature": "frontage_m",
+      "absolute_importance": 0.005681459164452097,
+      "signed_sum": 0.005681459164452097,
+      "max_absolute_coefficient": 0.005681459164452097
+    },
+    {
+      "feature": "road_segment_missing",
+      "absolute_importance": 0.0051722444107641435,
+      "signed_sum": 0.0051722444107641435,
+      "max_absolute_coefficient": 0.0051722444107641435
+    },
+    {
+      "feature": "other_near_temple",
+      "absolute_importance": 0.005111061777381924,
+      "signed_sum": -0.005111061777381924,
+      "max_absolute_coefficient": 0.005111061777381924
+    },
+    {
+      "feature": "other_park_opposite",
+      "absolute_importance": 0.004590108018841796,
+      "signed_sum": 0.004590108018841796,
+      "max_absolute_coefficient": 0.004590108018841796
+    },
+    {
+      "feature": "distance_to_main_road_m",
+      "absolute_importance": 0.004428087353759677,
+      "signed_sum": -0.004428087353759677,
+      "max_absolute_coefficient": 0.004428087353759677
+    },
+    {
+      "feature": "other_main_axis",
+      "absolute_importance": 0.003628764475261775,
+      "signed_sum": 0.003628764475261775,
+      "max_absolute_coefficient": 0.003628764475261775
+    },
+    {
+      "feature": "area_m2",
+      "absolute_importance": 0.0032930393809436917,
+      "signed_sum": 0.0032930393809436917,
+      "max_absolute_coefficient": 0.0032930393809436917
+    },
+    {
+      "feature": "quality_geometry_ratio_low",
+      "absolute_importance": 0.0026433303234404447,
+      "signed_sum": -0.0026433303234404447,
+      "max_absolute_coefficient": 0.0026433303234404447
+    },
+    {
+      "feature": "other_planning_issue",
+      "absolute_importance": 0.0019941984997822876,
+      "signed_sum": -0.0019941984997822876,
+      "max_absolute_coefficient": 0.0019941984997822876
+    },
+    {
+      "feature": "quality_area_outside_review_range",
+      "absolute_importance": 0.0015130490296222808,
+      "signed_sum": 0.0015130490296222808,
+      "max_absolute_coefficient": 0.0015130490296222808
+    },
+    {
+      "feature": "other_is_none",
+      "absolute_importance": 0.000968990162810183,
+      "signed_sum": -0.000968990162810183,
+      "max_absolute_coefficient": 0.000968990162810183
+    },
+    {
+      "feature": "quality_length_outside_review_range",
+      "absolute_importance": 0.0001273264351438539,
+      "signed_sum": -0.0001273264351438539,
+      "max_absolute_coefficient": 0.0001273264351438539
+    },
+    {
+      "feature": "ward_old_missing",
+      "absolute_importance": 0.0,
+      "signed_sum": 0.0,
+      "max_absolute_coefficient": 0.0
+    }
+  ],
+  "top_transformed_features": [
+    {
+      "transformed_feature": "categorical__ward_new_phường an khánh",
+      "coefficient": 0.6898526390979521,
+      "absolute_coefficient": 0.6898526390979521
+    },
+    {
+      "transformed_feature": "categorical__district_quận 1",
+      "coefficient": 0.5821796816580066,
+      "absolute_coefficient": 0.5821796816580066
+    },
+    {
+      "transformed_feature": "categorical__road_giang văn minh, phường an phú",
+      "coefficient": 0.5492440154836956,
+      "absolute_coefficient": 0.5492440154836956
+    },
+    {
+      "transformed_feature": "categorical__district_quận 12",
+      "coefficient": -0.46989463974389795,
+      "absolute_coefficient": 0.46989463974389795
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tân mỹ",
+      "coefficient": 0.447549002045423,
+      "absolute_coefficient": 0.447549002045423
+    },
+    {
+      "transformed_feature": "categorical__road_đường nội bộ khu dân cư ven sông",
+      "coefficient": -0.43922835379211134,
+      "absolute_coefficient": 0.43922835379211134
+    },
+    {
+      "transformed_feature": "categorical__road_đường nguyễn thị tư",
+      "coefficient": -0.43890409517559603,
+      "absolute_coefficient": 0.43890409517559603
+    },
+    {
+      "transformed_feature": "categorical__district_quận bình tân",
+      "coefficient": -0.4194175582342584,
+      "absolute_coefficient": 0.4194175582342584
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn văn kỉnh, phường thạnh mỹ lợi (dự án 174ha)",
+      "coefficient": 0.3935863540518256,
+      "absolute_coefficient": 0.3935863540518256
+    },
+    {
+      "transformed_feature": "categorical__road_tân xuân",
+      "coefficient": 0.3869434406966416,
+      "absolute_coefficient": 0.3869434406966416
+    },
+    {
+      "transformed_feature": "categorical__district_thành phố thủ đức",
+      "coefficient": -0.3682422138270639,
+      "absolute_coefficient": 0.3682422138270639
+    },
+    {
+      "transformed_feature": "categorical__district_quận 8",
+      "coefficient": -0.3668863857412427,
+      "absolute_coefficient": 0.3668863857412427
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường an phú",
+      "coefficient": 0.35778789132505273,
+      "absolute_coefficient": 0.35778789132505273
+    },
+    {
+      "transformed_feature": "categorical__road_lý chính thắng",
+      "coefficient": -0.3497765864669042,
+      "absolute_coefficient": 0.3497765864669042
+    },
+    {
+      "transformed_feature": "categorical__road_võ văn ngân",
+      "coefficient": 0.345215467898881,
+      "absolute_coefficient": 0.345215467898881
+    },
+    {
+      "transformed_feature": "categorical__road_phước thiện",
+      "coefficient": 0.33006772506027304,
+      "absolute_coefficient": 0.33006772506027304
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường thạnh mỹ lợi",
+      "coefficient": 0.329849352087485,
+      "absolute_coefficient": 0.329849352087485
+    },
+    {
+      "transformed_feature": "categorical__district_quận 3",
+      "coefficient": 0.3275943473267595,
+      "absolute_coefficient": 0.3275943473267595
+    },
+    {
+      "transformed_feature": "categorical__road_quốc lộ 13 cũ",
+      "coefficient": -0.3143984469062853,
+      "absolute_coefficient": 0.3143984469062853
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường long phước",
+      "coefficient": -0.31188024138664777,
+      "absolute_coefficient": 0.31188024138664777
+    },
+    {
+      "transformed_feature": "categorical__road_đường số 8, phường long phước",
+      "coefficient": -0.30529407550979776,
+      "absolute_coefficient": 0.30529407550979776
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường bến thành",
+      "coefficient": 0.2989459922188854,
+      "absolute_coefficient": 0.2989459922188854
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường cát lái",
+      "coefficient": -0.2953193337307571,
+      "absolute_coefficient": 0.2953193337307571
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường long trường",
+      "coefficient": -0.2763207803434744,
+      "absolute_coefficient": 0.2763207803434744
+    },
+    {
+      "transformed_feature": "categorical__road_mai chí thọ",
+      "coefficient": 0.2756816146962023,
+      "absolute_coefficient": 0.2756816146962023
+    },
+    {
+      "transformed_feature": "categorical__road_segment_hầm sông sài gòn - nút giao cát lái - xa lộ hà nội",
+      "coefficient": 0.2756816146962023,
+      "absolute_coefficient": 0.2756816146962023
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn văn linh",
+      "coefficient": -0.2738683136076457,
+      "absolute_coefficient": 0.2738683136076457
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường bình tiên",
+      "coefficient": -0.263311145549722,
+      "absolute_coefficient": 0.263311145549722
+    },
+    {
+      "transformed_feature": "categorical__district_quận phú nhuận",
+      "coefficient": 0.26176676028958945,
+      "absolute_coefficient": 0.26176676028958945
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường phú thuận",
+      "coefficient": -0.2607057831584858,
+      "absolute_coefficient": 0.2607057831584858
+    },
+    {
+      "transformed_feature": "numeric__log_alley_width_m",
+      "coefficient": 0.2596824328259784,
+      "absolute_coefficient": 0.2596824328259784
+    },
+    {
+      "transformed_feature": "categorical__road_đường nội bộ khu dân cư tân quy đông",
+      "coefficient": -0.252974131755021,
+      "absolute_coefficient": 0.252974131755021
+    },
+    {
+      "transformed_feature": "categorical__road_đồng văn cống",
+      "coefficient": -0.2519756667594084,
+      "absolute_coefficient": 0.2519756667594084
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường hiệp phú",
+      "coefficient": 0.24512404261950868,
+      "absolute_coefficient": 0.24512404261950868
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường xuân hòa",
+      "coefficient": 0.2440896842409531,
+      "absolute_coefficient": 0.2440896842409531
+    },
+    {
+      "transformed_feature": "categorical__road_tam đa",
+      "coefficient": -0.24238322056419273,
+      "absolute_coefficient": 0.24238322056419273
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường long bình",
+      "coefficient": -0.2408668465366121,
+      "absolute_coefficient": 0.2408668465366121
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường long bình",
+      "coefficient": -0.2408668465366121,
+      "absolute_coefficient": 0.2408668465366121
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường bến nghé",
+      "coefficient": 0.23998840395458618,
+      "absolute_coefficient": 0.23998840395458618
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường sài gòn",
+      "coefficient": 0.23998840395458618,
+      "absolute_coefficient": 0.23998840395458618
+    },
+    {
+      "transformed_feature": "categorical__district_quận 10",
+      "coefficient": 0.23846036304451476,
+      "absolute_coefficient": 0.23846036304451476
+    },
+    {
+      "transformed_feature": "categorical__road_phan văn trị",
+      "coefficient": 0.23718455010991196,
+      "absolute_coefficient": 0.23718455010991196
+    },
+    {
+      "transformed_feature": "categorical__district_quận 5",
+      "coefficient": 0.23694014326032448,
+      "absolute_coefficient": 0.23694014326032448
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường bến thành",
+      "coefficient": 0.23450494674559164,
+      "absolute_coefficient": 0.23450494674559164
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường long phước",
+      "coefficient": -0.23197746200571004,
+      "absolute_coefficient": 0.23197746200571004
+    },
+    {
+      "transformed_feature": "categorical__road_segment_ngã tư ga - cầu bình phước",
+      "coefficient": -0.23044014338789665,
+      "absolute_coefficient": 0.23044014338789665
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tân sơn hòa",
+      "coefficient": 0.22901083892036087,
+      "absolute_coefficient": 0.22901083892036087
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường võ thị sáu",
+      "coefficient": 0.22535069020193288,
+      "absolute_coefficient": 0.22535069020193288
+    },
+    {
+      "transformed_feature": "categorical__road_segment_nguyễn văn linh - sông cần giuộc",
+      "coefficient": -0.2235410924785932,
+      "absolute_coefficient": 0.2235410924785932
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường bình chiểu",
+      "coefficient": -0.22301036246230785,
+      "absolute_coefficient": 0.22301036246230785
+    },
+    {
+      "transformed_feature": "categorical__road_điện biên phủ",
+      "coefficient": 0.2224968511361552,
+      "absolute_coefficient": 0.2224968511361552
+    },
+    {
+      "transformed_feature": "categorical__road_segment_quốc lộ 13 - cuối đường",
+      "coefficient": -0.2216928510777889,
+      "absolute_coefficient": 0.2216928510777889
+    },
+    {
+      "transformed_feature": "categorical__road_segment_nguyễn duy trinh - cầu hai tý",
+      "coefficient": -0.22136254254770182,
+      "absolute_coefficient": 0.22136254254770182
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường chánh hưng",
+      "coefficient": 0.22008932194391925,
+      "absolute_coefficient": 0.22008932194391925
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường bình trưng",
+      "coefficient": 0.2197959340348625,
+      "absolute_coefficient": 0.2197959340348625
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tăng nhơn phú",
+      "coefficient": -0.2189939040934136,
+      "absolute_coefficient": 0.2189939040934136
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường long trường",
+      "coefficient": -0.2144911521251744,
+      "absolute_coefficient": 0.2144911521251744
+    },
+    {
+      "transformed_feature": "categorical__road_phan xích long",
+      "coefficient": 0.21341046347775525,
+      "absolute_coefficient": 0.21341046347775525
+    },
+    {
+      "transformed_feature": "categorical__road_bùi công trừng",
+      "coefficient": -0.21187754270625075,
+      "absolute_coefficient": 0.21187754270625075
+    },
+    {
+      "transformed_feature": "categorical__district_quận tân phú",
+      "coefficient": -0.21065854254570204,
+      "absolute_coefficient": 0.21065854254570204
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn gia trí",
+      "coefficient": 0.20918661963994734,
+      "absolute_coefficient": 0.20918661963994734
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường tân phong",
+      "coefficient": 0.20732016128631628,
+      "absolute_coefficient": 0.20732016128631628
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn văn hưởng, phường thảo điền",
+      "coefficient": 0.20699696386190558,
+      "absolute_coefficient": 0.20699696386190558
+    },
+    {
+      "transformed_feature": "categorical__road_gò cát",
+      "coefficient": -0.20546666162784938,
+      "absolute_coefficient": 0.20546666162784938
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tân sơn",
+      "coefficient": -0.20177788400756091,
+      "absolute_coefficient": 0.20177788400756091
+    },
+    {
+      "transformed_feature": "categorical__road_segment_lũy bán bích - phan anh",
+      "coefficient": 0.20176012856509964,
+      "absolute_coefficient": 0.20176012856509964
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tam bình",
+      "coefficient": -0.20024536375960086,
+      "absolute_coefficient": 0.20024536375960086
+    },
+    {
+      "transformed_feature": "categorical__road_segment_cây da sà - quốc lộ 1a",
+      "coefficient": 0.1991880766308033,
+      "absolute_coefficient": 0.1991880766308033
+    },
+    {
+      "transformed_feature": "categorical__road_segment_nguyễn tri phương - học lạc",
+      "coefficient": 0.1989608515975599,
+      "absolute_coefficient": 0.1989608515975599
+    },
+    {
+      "transformed_feature": "categorical__road_trương vĩnh ký",
+      "coefficient": 0.1988039889808074,
+      "absolute_coefficient": 0.1988039889808074
+    },
+    {
+      "transformed_feature": "categorical__road_bình thới",
+      "coefficient": -0.19642309029292054,
+      "absolute_coefficient": 0.19642309029292054
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường phú lâm",
+      "coefficient": -0.1926246723924409,
+      "absolute_coefficient": 0.1926246723924409
+    },
+    {
+      "transformed_feature": "categorical__road_segment_toàn tuyến",
+      "coefficient": -0.19064444509890788,
+      "absolute_coefficient": 0.19064444509890788
+    },
+    {
+      "transformed_feature": "categorical__road_lê văn việt",
+      "coefficient": 0.18882546359672409,
+      "absolute_coefficient": 0.18882546359672409
+    },
+    {
+      "transformed_feature": "categorical__road_long thuận",
+      "coefficient": -0.1887097606315014,
+      "absolute_coefficient": 0.1887097606315014
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn văn thương",
+      "coefficient": 0.18840751869269107,
+      "absolute_coefficient": 0.18840751869269107
+    },
+    {
+      "transformed_feature": "categorical__road_đường số 12",
+      "coefficient": -0.18763482877696344,
+      "absolute_coefficient": 0.18763482877696344
+    },
+    {
+      "transformed_feature": "categorical__ward_old_infrequent_sklearn",
+      "coefficient": 0.18546296452781114,
+      "absolute_coefficient": 0.18546296452781114
+    },
+    {
+      "transformed_feature": "categorical__district_quận gò vấp",
+      "coefficient": -0.1850977049558642,
+      "absolute_coefficient": 0.1850977049558642
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn lương bằng (broad way)",
+      "coefficient": 0.18370527670436446,
+      "absolute_coefficient": 0.18370527670436446
+    },
+    {
+      "transformed_feature": "categorical__road_đường b",
+      "coefficient": -0.1788760273237032,
+      "absolute_coefficient": 0.1788760273237032
+    },
+    {
+      "transformed_feature": "categorical__road_hoàng quốc việt",
+      "coefficient": 0.17745988319021783,
+      "absolute_coefficient": 0.17745988319021783
+    },
+    {
+      "transformed_feature": "categorical__road_đặng thùy trâm",
+      "coefficient": -0.17489225146215018,
+      "absolute_coefficient": 0.17489225146215018
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường phú mỹ",
+      "coefficient": -0.17400320538020772,
+      "absolute_coefficient": 0.17400320538020772
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường tân thuận đông",
+      "coefficient": -0.1709690795375798,
+      "absolute_coefficient": 0.1709690795375798
+    },
+    {
+      "transformed_feature": "categorical__road_phạm công trứ, phường thạnh mỹ lợi (dự án 143ha-khu 1)",
+      "coefficient": -0.17007552304897544,
+      "absolute_coefficient": 0.17007552304897544
+    },
+    {
+      "transformed_feature": "categorical__road_segment_nguyễn trọng quản, phường thạnh mỹ lợi (dự án 143ha- khu 1) - cuối đường",
+      "coefficient": -0.17007552304897544,
+      "absolute_coefficient": 0.17007552304897544
+    },
+    {
+      "transformed_feature": "categorical__road_segment_ngã tư bốn xã - tân hòa đông",
+      "coefficient": 0.1694163203137738,
+      "absolute_coefficient": 0.1694163203137738
+    },
+    {
+      "transformed_feature": "categorical__road_segment_cù lao - giáp ranh quận bình thạnh",
+      "coefficient": 0.1692199412718647,
+      "absolute_coefficient": 0.1692199412718647
+    },
+    {
+      "transformed_feature": "categorical__business_advantage_tot",
+      "coefficient": 0.16806296449345232,
+      "absolute_coefficient": 0.16806296449345232
+    },
+    {
+      "transformed_feature": "categorical__road_long phước",
+      "coefficient": -0.16613913527596327,
+      "absolute_coefficient": 0.16613913527596327
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường bình trưng đông",
+      "coefficient": -0.1658441197998278,
+      "absolute_coefficient": 0.1658441197998278
+    },
+    {
+      "transformed_feature": "categorical__road_đường nội bộ khu dân cư phú mỹ (phường phú mỹ)",
+      "coefficient": 0.16571312654339876,
+      "absolute_coefficient": 0.16571312654339876
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường linh xuân",
+      "coefficient": -0.16536083447754274,
+      "absolute_coefficient": 0.16536083447754274
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường 22",
+      "coefficient": 0.16512516668935634,
+      "absolute_coefficient": 0.16512516668935634
+    },
+    {
+      "transformed_feature": "categorical__road_phước thiện - phường long bình",
+      "coefficient": 0.16416742938492387,
+      "absolute_coefficient": 0.16416742938492387
+    },
+    {
+      "transformed_feature": "categorical__road_tú xương",
+      "coefficient": 0.1631306925877782,
+      "absolute_coefficient": 0.1631306925877782
+    },
+    {
+      "transformed_feature": "categorical__road_segment_mũi tàu đường trường chinh - âu cơ - vòng xoay lê đại hành",
+      "coefficient": -0.1622920568739128,
+      "absolute_coefficient": 0.1622920568739128
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường phú nhuận",
+      "coefficient": 0.16208246432202136,
+      "absolute_coefficient": 0.16208246432202136
+    },
+    {
+      "transformed_feature": "categorical__road_bình lợi",
+      "coefficient": -0.16191030855540406,
+      "absolute_coefficient": 0.16191030855540406
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường bình tân",
+      "coefficient": -0.16166691634395794,
+      "absolute_coefficient": 0.16166691634395794
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường tân tạo a",
+      "coefficient": -0.16142341381745423,
+      "absolute_coefficient": 0.16142341381745423
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tân tạo",
+      "coefficient": -0.16142341381745423,
+      "absolute_coefficient": 0.16142341381745423
+    },
+    {
+      "transformed_feature": "categorical__road_hoàng diệu 2",
+      "coefficient": 0.1597540434450969,
+      "absolute_coefficient": 0.1597540434450969
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường nguyễn thái bình",
+      "coefficient": 0.15966605902145875,
+      "absolute_coefficient": 0.15966605902145875
+    },
+    {
+      "transformed_feature": "categorical__road_phạm phú thứ",
+      "coefficient": 0.15948529950628246,
+      "absolute_coefficient": 0.15948529950628246
+    },
+    {
+      "transformed_feature": "categorical__road_đặng như mai, phường thạnh mỹ lợi (dự án 174ha)",
+      "coefficient": 0.15817645669261599,
+      "absolute_coefficient": 0.15817645669261599
+    },
+    {
+      "transformed_feature": "categorical__road_segment_đồng văn cống - đường 103-tml",
+      "coefficient": 0.15817645669261599,
+      "absolute_coefficient": 0.15817645669261599
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường an hội tây",
+      "coefficient": -0.15725247910170673,
+      "absolute_coefficient": 0.15725247910170673
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường cầu ông lãnh",
+      "coefficient": -0.15374911182625342,
+      "absolute_coefficient": 0.15374911182625342
+    },
+    {
+      "transformed_feature": "categorical__road_dương đức hiền",
+      "coefficient": 0.1529705175706224,
+      "absolute_coefficient": 0.1529705175706224
+    },
+    {
+      "transformed_feature": "categorical__road_lê thánh tôn",
+      "coefficient": 0.152907246813854,
+      "absolute_coefficient": 0.152907246813854
+    },
+    {
+      "transformed_feature": "categorical__road_dương đình hội",
+      "coefficient": 0.152605285093092,
+      "absolute_coefficient": 0.152605285093092
+    },
+    {
+      "transformed_feature": "categorical__road_phú thọ hòa",
+      "coefficient": 0.15226766577923526,
+      "absolute_coefficient": 0.15226766577923526
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường bình thọ",
+      "coefficient": 0.15097665034132654,
+      "absolute_coefficient": 0.15097665034132654
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường đa kao",
+      "coefficient": 0.1493187141681137,
+      "absolute_coefficient": 0.1493187141681137
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường bình phú",
+      "coefficient": -0.14877630010417375,
+      "absolute_coefficient": 0.14877630010417375
+    },
+    {
+      "transformed_feature": "categorical__road_segment_quốc lộ 1 - sông sài gòn",
+      "coefficient": 0.14771471302072994,
+      "absolute_coefficient": 0.14771471302072994
+    },
+    {
+      "transformed_feature": "categorical__road_đường số 27. phường hiệp bình chánh",
+      "coefficient": -0.14626667170939278,
+      "absolute_coefficient": 0.14626667170939278
+    },
+    {
+      "transformed_feature": "categorical__road_segment_bình long - đường kênh 19/5",
+      "coefficient": 0.14542445065248782,
+      "absolute_coefficient": 0.14542445065248782
+    },
+    {
+      "transformed_feature": "categorical__road_trịnh quang nghị",
+      "coefficient": -0.1448600093002517,
+      "absolute_coefficient": 0.1448600093002517
+    },
+    {
+      "transformed_feature": "categorical__road_huỳnh văn bánh",
+      "coefficient": -0.14482575280666724,
+      "absolute_coefficient": 0.14482575280666724
+    },
+    {
+      "transformed_feature": "categorical__road_sư vạn hạnh",
+      "coefficient": 0.1436612329718159,
+      "absolute_coefficient": 0.1436612329718159
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường long thạnh mỹ",
+      "coefficient": -0.14175508477751347,
+      "absolute_coefficient": 0.14175508477751347
+    },
+    {
+      "transformed_feature": "categorical__road_xa lộ hà nội",
+      "coefficient": -0.1411985784792344,
+      "absolute_coefficient": 0.1411985784792344
+    },
+    {
+      "transformed_feature": "categorical__road_kinh dương vương",
+      "coefficient": 0.13961810634950914,
+      "absolute_coefficient": 0.13961810634950914
+    },
+    {
+      "transformed_feature": "categorical__road_đình phong phú",
+      "coefficient": 0.1382980675636724,
+      "absolute_coefficient": 0.1382980675636724
+    },
+    {
+      "transformed_feature": "categorical__road_3 tháng 2",
+      "coefficient": 0.1380583318497778,
+      "absolute_coefficient": 0.1380583318497778
+    },
+    {
+      "transformed_feature": "categorical__road_segment_đường < 16m",
+      "coefficient": -0.13791466557523377,
+      "absolute_coefficient": 0.13791466557523377
+    },
+    {
+      "transformed_feature": "categorical__road_bến lội",
+      "coefficient": -0.1378674134348592,
+      "absolute_coefficient": 0.1378674134348592
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tân thuận",
+      "coefficient": -0.13743436082987429,
+      "absolute_coefficient": 0.13743436082987429
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn thái bình",
+      "coefficient": -0.13649548433936087,
+      "absolute_coefficient": 0.13649548433936087
+    },
+    {
+      "transformed_feature": "categorical__road_trường thọ (đường số 2)",
+      "coefficient": 0.13608653546141508,
+      "absolute_coefficient": 0.13608653546141508
+    },
+    {
+      "transformed_feature": "categorical__road_segment_cầu hang - giáp ranh quận bình thạnh",
+      "coefficient": 0.135669159504571,
+      "absolute_coefficient": 0.135669159504571
+    },
+    {
+      "transformed_feature": "categorical__road_hiệp bình",
+      "coefficient": -0.1337302687589492,
+      "absolute_coefficient": 0.1337302687589492
+    },
+    {
+      "transformed_feature": "categorical__road_segment_ngã năm chợ thủ đức - phạm văn đồng",
+      "coefficient": 0.13300386210381246,
+      "absolute_coefficient": 0.13300386210381246
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường chợ quán",
+      "coefficient": 0.13152402609778913,
+      "absolute_coefficient": 0.13152402609778913
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường an đông",
+      "coefficient": 0.13114896491356975,
+      "absolute_coefficient": 0.13114896491356975
+    },
+    {
+      "transformed_feature": "categorical__road_lý phục man",
+      "coefficient": -0.1307400895919963,
+      "absolute_coefficient": 0.1307400895919963
+    },
+    {
+      "transformed_feature": "categorical__road_lâm văn bền",
+      "coefficient": -0.13028226699737197,
+      "absolute_coefficient": 0.13028226699737197
+    },
+    {
+      "transformed_feature": "categorical__road_đường 51, phường bình trưng đông",
+      "coefficient": -0.12940930735420572,
+      "absolute_coefficient": 0.12940930735420572
+    },
+    {
+      "transformed_feature": "categorical__road_tân hương",
+      "coefficient": 0.12556983135350935,
+      "absolute_coefficient": 0.12556983135350935
+    },
+    {
+      "transformed_feature": "categorical__road_segment_kha vạn cân - lê văn chí",
+      "coefficient": 0.12550554390320728,
+      "absolute_coefficient": 0.12550554390320728
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường linh xuân",
+      "coefficient": -0.12462501243924842,
+      "absolute_coefficient": 0.12462501243924842
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn sơn",
+      "coefficient": 0.12425989334251909,
+      "absolute_coefficient": 0.12425989334251909
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường bàn cờ",
+      "coefficient": 0.12385436892848098,
+      "absolute_coefficient": 0.12385436892848098
+    },
+    {
+      "transformed_feature": "categorical__road_sinco",
+      "coefficient": -0.12193338410315203,
+      "absolute_coefficient": 0.12193338410315203
+    },
+    {
+      "transformed_feature": "categorical__road_segment_hoàng hữu nam - trọn đường",
+      "coefficient": -0.12127339602791311,
+      "absolute_coefficient": 0.12127339602791311
+    },
+    {
+      "transformed_feature": "categorical__road_đường 1-20, phường phước bình",
+      "coefficient": -0.12067313679017112,
+      "absolute_coefficient": 0.12067313679017112
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường trung mỹ tây",
+      "coefficient": -0.12052425293021965,
+      "absolute_coefficient": 0.12052425293021965
+    },
+    {
+      "transformed_feature": "categorical__road_bùi văn ngữ",
+      "coefficient": -0.12028917309665835,
+      "absolute_coefficient": 0.12028917309665835
+    },
+    {
+      "transformed_feature": "categorical__district_quận 11",
+      "coefficient": 0.11984341837837101,
+      "absolute_coefficient": 0.11984341837837101
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường thới an",
+      "coefficient": -0.11984067219582827,
+      "absolute_coefficient": 0.11984067219582827
+    },
+    {
+      "transformed_feature": "categorical__price_position_vt1",
+      "coefficient": 0.11972842117789206,
+      "absolute_coefficient": 0.11972842117789206
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường bình thuận",
+      "coefficient": 0.1194272815335634,
+      "absolute_coefficient": 0.1194272815335634
+    },
+    {
+      "transformed_feature": "categorical__road_segment_nguyễn văn luông - mũi tàu",
+      "coefficient": 0.11881505404298888,
+      "absolute_coefficient": 0.11881505404298888
+    },
+    {
+      "transformed_feature": "categorical__road_đường bờ bao tân thắng",
+      "coefficient": 0.11858864890728717,
+      "absolute_coefficient": 0.11858864890728717
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường tăng nhơn phú b",
+      "coefficient": 0.11820794188524823,
+      "absolute_coefficient": 0.11820794188524823
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường 12",
+      "coefficient": 0.11733763573931881,
+      "absolute_coefficient": 0.11733763573931881
+    },
+    {
+      "transformed_feature": "categorical__road_xô viết nghệ tĩnh",
+      "coefficient": -0.11369403773738812,
+      "absolute_coefficient": 0.11369403773738812
+    },
+    {
+      "transformed_feature": "categorical__road_segment_tân chánh hiệp 33 (đường đông bắc sau phần mềm quang trung ) - nguyễn ảnh thủ",
+      "coefficient": 0.11367896497598311,
+      "absolute_coefficient": 0.11367896497598311
+    },
+    {
+      "transformed_feature": "categorical__road_segment_đường >= 16m",
+      "coefficient": -0.11324585788567512,
+      "absolute_coefficient": 0.11324585788567512
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường tây thạnh",
+      "coefficient": -0.11320297660960386,
+      "absolute_coefficient": 0.11320297660960386
+    },
+    {
+      "transformed_feature": "categorical__road_huỳnh thiện lộc",
+      "coefficient": -0.11203794904329395,
+      "absolute_coefficient": 0.11203794904329395
+    },
+    {
+      "transformed_feature": "categorical__road_dương quảng hàm",
+      "coefficient": -0.11164400112759103,
+      "absolute_coefficient": 0.11164400112759103
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường gia định",
+      "coefficient": 0.11109286892295545,
+      "absolute_coefficient": 0.11109286892295545
+    },
+    {
+      "transformed_feature": "categorical__road_dương thị mười",
+      "coefficient": -0.11015399917047905,
+      "absolute_coefficient": 0.11015399917047905
+    },
+    {
+      "transformed_feature": "categorical__ward_new_phường vĩnh hội",
+      "coefficient": 0.1101404119468181,
+      "absolute_coefficient": 0.1101404119468181
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường phước bình",
+      "coefficient": -0.10943377787709282,
+      "absolute_coefficient": 0.10943377787709282
+    },
+    {
+      "transformed_feature": "categorical__road_linh trung",
+      "coefficient": -0.10919175337750758,
+      "absolute_coefficient": 0.10919175337750758
+    },
+    {
+      "transformed_feature": "categorical__road_cô bắc",
+      "coefficient": -0.10682104293101138,
+      "absolute_coefficient": 0.10682104293101138
+    },
+    {
+      "transformed_feature": "categorical__business_advantage_trung_binh",
+      "coefficient": -0.10647520323222885,
+      "absolute_coefficient": 0.10647520323222885
+    },
+    {
+      "transformed_feature": "categorical__road_segment_cầu điện biên phủ - cầu sài gòn",
+      "coefficient": -0.1060887884676795,
+      "absolute_coefficient": 0.1060887884676795
+    },
+    {
+      "transformed_feature": "categorical__road_gò dầu",
+      "coefficient": 0.10598012078508487,
+      "absolute_coefficient": 0.10598012078508487
+    },
+    {
+      "transformed_feature": "categorical__road_segment_nguyễn xiển - cuối đường",
+      "coefficient": 0.10583980586196573,
+      "absolute_coefficient": 0.10583980586196573
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn phúc chu",
+      "coefficient": -0.10579432346952261,
+      "absolute_coefficient": 0.10579432346952261
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường tân định",
+      "coefficient": -0.10542535226399914,
+      "absolute_coefficient": 0.10542535226399914
+    },
+    {
+      "transformed_feature": "categorical__road_lạc long quân",
+      "coefficient": -0.10427461537483151,
+      "absolute_coefficient": 0.10427461537483151
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường linh đông",
+      "coefficient": -0.10415913044072053,
+      "absolute_coefficient": 0.10415913044072053
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn thị minh khai",
+      "coefficient": 0.10304777298032716,
+      "absolute_coefficient": 0.10304777298032716
+    },
+    {
+      "transformed_feature": "categorical__road_hồ đắc di",
+      "coefficient": 0.10283268200816208,
+      "absolute_coefficient": 0.10283268200816208
+    },
+    {
+      "transformed_feature": "categorical__road_dương bá trạc",
+      "coefficient": 0.10256801907047451,
+      "absolute_coefficient": 0.10256801907047451
+    },
+    {
+      "transformed_feature": "categorical__road_hoàng hoa thám",
+      "coefficient": 0.1020277941458794,
+      "absolute_coefficient": 0.1020277941458794
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường hiệp bình phước",
+      "coefficient": 0.10123235480055987,
+      "absolute_coefficient": 0.10123235480055987
+    },
+    {
+      "transformed_feature": "categorical__road_đường số 6, phường long bình",
+      "coefficient": -0.10079742900007521,
+      "absolute_coefficient": 0.10079742900007521
+    },
+    {
+      "transformed_feature": "categorical__road_võ chí công",
+      "coefficient": 0.09982542869611562,
+      "absolute_coefficient": 0.09982542869611562
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường cầu kho",
+      "coefficient": -0.0997694399580002,
+      "absolute_coefficient": 0.0997694399580002
+    },
+    {
+      "transformed_feature": "categorical__ward_old_phường tân tạo",
+      "coefficient": -0.09955475328059624,
+      "absolute_coefficient": 0.09955475328059624
+    },
+    {
+      "transformed_feature": "categorical__road_phạm đăng giang",
+      "coefficient": 0.09823591171486554,
+      "absolute_coefficient": 0.09823591171486554
+    },
+    {
+      "transformed_feature": "categorical__road_segment_cầu thị nghè - vòng xoay hàng xanh",
+      "coefficient": 0.09798149102889595,
+      "absolute_coefficient": 0.09798149102889595
+    },
+    {
+      "transformed_feature": "categorical__road_quốc lộ 22",
+      "coefficient": -0.09796789195951668,
+      "absolute_coefficient": 0.09796789195951668
+    },
+    {
+      "transformed_feature": "categorical__road_đường liên phường phú hữu",
+      "coefficient": 0.0975604984632525,
+      "absolute_coefficient": 0.0975604984632525
+    },
+    {
+      "transformed_feature": "categorical__road_đường số 8, phường trường thạnh",
+      "coefficient": -0.09753418046729448,
+      "absolute_coefficient": 0.09753418046729448
+    },
+    {
+      "transformed_feature": "categorical__road_trần bá giao",
+      "coefficient": -0.09751909545582747,
+      "absolute_coefficient": 0.09751909545582747
+    },
+    {
+      "transformed_feature": "categorical__road_segment_chung cư hà kiều - nguyễn thái sơn",
+      "coefficient": -0.09751909545582747,
+      "absolute_coefficient": 0.09751909545582747
+    },
+    {
+      "transformed_feature": "categorical__road_thích quảng đức",
+      "coefficient": -0.09732648620312527,
+      "absolute_coefficient": 0.09732648620312527
+    },
+    {
+      "transformed_feature": "categorical__road_nguyễn hoàng",
+      "coefficient": 0.09718736566056793,
+      "absolute_coefficient": 0.09718736566056793
+    },
+    {
+      "transformed_feature": "categorical__road_tạ quang bửu",
+      "coefficient": -0.09646682762020566,
+      "absolute_coefficient": 0.09646682762020566
+    },
+    {
+      "transformed_feature": "categorical__road_man thiện",
+      "coefficient": 0.09644025658411821,
+      "absolute_coefficient": 0.09644025658411821
+    },
+    {
+      "transformed_feature": "categorical__road_segment_cầu bà tàng - cuối đường",
+      "coefficient": -0.09631609572928544,
+      "absolute_coefficient": 0.09631609572928544
+    }
+  ]
+}

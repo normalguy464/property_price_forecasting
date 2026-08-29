@@ -1,0 +1,335 @@
+{
+  "total_trials": 14,
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "value": 15883865.346325831,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.18214744423753768,
+        "l2_leaf_reg": 12.057126287443763,
+        "random_strength": 0.787566024988986,
+        "bagging_temperature": 0.7800932022121826,
+        "border_count": 254
+      },
+      "fold_mae": [
+        15371857.004608132,
+        18245434.005654927,
+        13807246.855811827,
+        15306481.788775105
+      ],
+      "best_iterations": [
+        236,
+        664,
+        686,
+        699
+      ]
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "value": 16987570.10087376,
+      "parameters": {
+        "depth": 6,
+        "learning_rate": 0.11494985844370333,
+        "l2_leaf_reg": 1.0725209743171995,
+        "random_strength": 4.353010439152425,
+        "bagging_temperature": 4.162213204002109,
+        "border_count": 64
+      },
+      "fold_mae": [
+        15941741.619478086,
+        19509009.739320643,
+        15882233.975220094,
+        15928842.741718758
+      ],
+      "best_iterations": [
+        320,
+        682,
+        646,
+        695
+      ]
+    },
+    {
+      "number": 2,
+      "state": "COMPLETE",
+      "value": 16906813.190784637,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.08118441500491742,
+        "l2_leaf_reg": 4.345454109729475,
+        "random_strength": 0.19117376123375926,
+        "bagging_temperature": 3.0592644736118975,
+        "border_count": 254
+      },
+      "fold_mae": [
+        15896889.630104585,
+        19514031.743312664,
+        15298431.953838004,
+        16138572.953609753
+      ],
+      "best_iterations": [
+        699,
+        697,
+        697,
+        699
+      ]
+    },
+    {
+      "number": 3,
+      "state": "FAIL",
+      "value": null,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.13305603957582046,
+        "l2_leaf_reg": 1.9721610970573997,
+        "random_strength": 0.5338741354740675,
+        "bagging_temperature": 2.9620728443102124,
+        "border_count": 128
+      },
+      "fold_mae": [],
+      "best_iterations": []
+    },
+    {
+      "number": 4,
+      "state": "COMPLETE",
+      "value": 15883865.346325831,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.18214744423753768,
+        "l2_leaf_reg": 12.057126287443763,
+        "random_strength": 0.787566024988986,
+        "bagging_temperature": 0.7800932022121826,
+        "border_count": 254
+      },
+      "fold_mae": [
+        15371857.004608132,
+        18245434.005654927,
+        13807246.855811827,
+        15306481.788775105
+      ],
+      "best_iterations": [
+        236,
+        664,
+        686,
+        699
+      ]
+    },
+    {
+      "number": 5,
+      "state": "COMPLETE",
+      "value": 16987570.10087376,
+      "parameters": {
+        "depth": 6,
+        "learning_rate": 0.11494985844370333,
+        "l2_leaf_reg": 1.0725209743171995,
+        "random_strength": 4.353010439152425,
+        "bagging_temperature": 4.162213204002109,
+        "border_count": 64
+      },
+      "fold_mae": [
+        15941741.619478086,
+        19509009.739320643,
+        15882233.975220094,
+        15928842.741718758
+      ],
+      "best_iterations": [
+        320,
+        682,
+        646,
+        695
+      ]
+    },
+    {
+      "number": 6,
+      "state": "FAIL",
+      "value": null,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.08118441500491742,
+        "l2_leaf_reg": 4.345454109729475,
+        "random_strength": 0.19117376123375926,
+        "bagging_temperature": 3.0592644736118975,
+        "border_count": 254
+      },
+      "fold_mae": [],
+      "best_iterations": []
+    },
+    {
+      "number": 7,
+      "state": "COMPLETE",
+      "value": 17139313.27801474,
+      "parameters": {
+        "depth": 7,
+        "learning_rate": 0.15420014813482638,
+        "l2_leaf_reg": 2.914550332023166,
+        "random_strength": 0.7081989439502177,
+        "bagging_temperature": 3.468407787025237,
+        "border_count": 64
+      },
+      "fold_mae": [
+        16609032.33151696,
+        20073876.251483914,
+        15203640.481196903,
+        15758711.279346135
+      ],
+      "best_iterations": [
+        330,
+        197,
+        524,
+        700
+      ]
+    },
+    {
+      "number": 8,
+      "state": "COMPLETE",
+      "value": 17023236.961220413,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.10384218142408955,
+        "l2_leaf_reg": 4.818623857922896,
+        "random_strength": 0.11147534312750416,
+        "bagging_temperature": 4.406650884875071,
+        "border_count": 64
+      },
+      "fold_mae": [
+        16015201.202953553,
+        19846838.899222597,
+        15176482.08870812,
+        16193245.40269695
+      ],
+      "best_iterations": [
+        546,
+        698,
+        687,
+        699
+      ]
+    },
+    {
+      "number": 9,
+      "state": "COMPLETE",
+      "value": 16090870.198630886,
+      "parameters": {
+        "depth": 4,
+        "learning_rate": 0.17124245980737093,
+        "l2_leaf_reg": 4.929504762181703,
+        "random_strength": 1.1803904675404837,
+        "bagging_temperature": 0.3597614748108968,
+        "border_count": 128
+      },
+      "fold_mae": [
+        15745733.062072255,
+        18375930.629107915,
+        13790318.261832193,
+        15627922.140437765
+      ],
+      "best_iterations": [
+        325,
+        696,
+        624,
+        542
+      ]
+    },
+    {
+      "number": 10,
+      "state": "COMPLETE",
+      "value": 16931241.728074465,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.1439975670821254,
+        "l2_leaf_reg": 1.0794155930032676,
+        "random_strength": 4.323383399701628,
+        "bagging_temperature": 3.236694391493102,
+        "border_count": 254
+      },
+      "fold_mae": [
+        15634282.649819767,
+        19670360.124308888,
+        15437966.269079017,
+        16197914.252266457
+      ],
+      "best_iterations": [
+        366,
+        312,
+        498,
+        686
+      ]
+    },
+    {
+      "number": 11,
+      "state": "COMPLETE",
+      "value": 17093136.38026488,
+      "parameters": {
+        "depth": 6,
+        "learning_rate": 0.03877929495039831,
+        "l2_leaf_reg": 1.1273389586398557,
+        "random_strength": 2.416538489218836,
+        "bagging_temperature": 3.1982478712064792,
+        "border_count": 64
+      },
+      "fold_mae": [
+        15843065.109535266,
+        19696953.30232215,
+        15484578.601407493,
+        16576166.990587052
+      ],
+      "best_iterations": [
+        698,
+        700,
+        698,
+        700
+      ]
+    },
+    {
+      "number": 12,
+      "state": "PRUNED",
+      "value": 18151660.84529364,
+      "parameters": {
+        "depth": 4,
+        "learning_rate": 0.0329999359470516,
+        "l2_leaf_reg": 28.329434320876253,
+        "random_strength": 0.05476797377814108,
+        "bagging_temperature": 1.863164766706947,
+        "border_count": 128
+      },
+      "fold_mae": [
+        17056407.678011455,
+        20779718.32789943,
+        16534756.983356243,
+        17453005.001321714
+      ],
+      "best_iterations": [
+        700,
+        700,
+        699,
+        700
+      ]
+    },
+    {
+      "number": 13,
+      "state": "COMPLETE",
+      "value": 15971508.08076988,
+      "parameters": {
+        "depth": 5,
+        "learning_rate": 0.1917369632656752,
+        "l2_leaf_reg": 15.067585506246171,
+        "random_strength": 0.5285396784226605,
+        "bagging_temperature": 0.40609530776240327,
+        "border_count": 254
+      },
+      "fold_mae": [
+        15490576.304340841,
+        18786237.888761308,
+        13534365.281625498,
+        15117714.816920258
+      ],
+      "best_iterations": [
+        251,
+        474,
+        688,
+        686
+      ]
+    }
+  ]
+}

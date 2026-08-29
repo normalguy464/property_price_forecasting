@@ -1,0 +1,27 @@
+[
+  {
+    "prediction_vnd_m2": 61862065.138549514,
+    "status": "automatic",
+    "flags": [],
+    "tsss_coverage": {
+      "same_road_count_365d": 190.0,
+      "backoff_count_365d": 190.0,
+      "comparable_count_365d": 5.0,
+      "backoff_level_365d": 0
+    },
+    "prediction_intervals": {
+      "0.8": {
+        "lower_vnd_m2": 50887428.255252294,
+        "upper_vnd_m2": 75203546.96730636
+      },
+      "0.9": {
+        "lower_vnd_m2": 46999842.26129883,
+        "upper_vnd_m2": 81423998.77068603
+      },
+      "0.95": {
+        "lower_vnd_m2": 43156470.463826284,
+        "upper_vnd_m2": 88675349.35013212
+      }
+    }
+  }
+]

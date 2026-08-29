@@ -1,0 +1,71 @@
+{
+  "strategy": "expanding_window",
+  "population": "TSTĐ only",
+  "tsss_used": false,
+  "test_start": "2025-05-01",
+  "test_end": "2025-07-31",
+  "development_rows": 6025,
+  "test_rows": 1000,
+  "development_date_min": "2024-03-01",
+  "development_date_max": "2025-04-30",
+  "test_date_min": "2025-05-04",
+  "test_date_max": "2025-07-31",
+  "test_rows_with_asset_seen_in_development": 369,
+  "test_rows_with_new_asset": 631,
+  "report_group_overlap_development_test": 0,
+  "asset_group_overlap_development_test": 368,
+  "folds": [
+    {
+      "name": "fold_1",
+      "train_start": "2024-03-01",
+      "train_end": "2024-08-31",
+      "validation_start": "2024-09-01",
+      "validation_end": "2024-10-31",
+      "train_rows": 2691,
+      "validation_rows": 834,
+      "train_target_median": 85001051.0,
+      "validation_target_median": 82059874.5,
+      "report_group_overlap": 0,
+      "asset_group_overlap": 59
+    },
+    {
+      "name": "fold_2",
+      "train_start": "2024-03-01",
+      "train_end": "2024-10-31",
+      "validation_start": "2024-11-01",
+      "validation_end": "2024-12-31",
+      "train_rows": 3525,
+      "validation_rows": 992,
+      "train_target_median": 84601463.0,
+      "validation_target_median": 87073152.0,
+      "report_group_overlap": 0,
+      "asset_group_overlap": 62
+    },
+    {
+      "name": "fold_3",
+      "train_start": "2024-03-01",
+      "train_end": "2024-12-31",
+      "validation_start": "2025-01-01",
+      "validation_end": "2025-02-28",
+      "train_rows": 4517,
+      "validation_rows": 697,
+      "train_target_median": 84967284.0,
+      "validation_target_median": 82318004.0,
+      "report_group_overlap": 0,
+      "asset_group_overlap": 61
+    },
+    {
+      "name": "fold_4",
+      "train_start": "2024-03-01",
+      "train_end": "2025-02-28",
+      "validation_start": "2025-03-01",
+      "validation_end": "2025-04-30",
+      "train_rows": 5214,
+      "validation_rows": 811,
+      "train_target_median": 84787165.5,
+      "validation_target_median": 83724841.0,
+      "report_group_overlap": 0,
+      "asset_group_overlap": 211
+    }
+  ]
+}

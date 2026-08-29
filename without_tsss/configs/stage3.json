@@ -1,0 +1,42 @@
+{
+  "random_seed": 42,
+  "primary_metric": "mae_vnd_m2",
+  "development_split": "development",
+  "test_rows_allowed": 0,
+  "hierarchical_baseline": {
+    "lookback_months": 6,
+    "road_min_count": 5,
+    "ward_min_count": 10,
+    "district_min_count": 20
+  },
+  "ridge_alphas": [1.0, 10.0, 100.0],
+  "one_hot_min_frequency": 5,
+  "catboost_default": {
+    "iterations": 400,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5.0,
+    "random_strength": 1.0,
+    "bagging_temperature": 1.0,
+    "border_count": 128
+  },
+  "catboost_common": {
+    "loss_function": "RMSE",
+    "eval_metric": "MAE",
+    "target_transform": "log1p",
+    "bootstrap_type": "Bayesian",
+    "one_hot_max_size": 10,
+    "max_ctr_complexity": 1,
+    "rsm": 0.8,
+    "early_stopping_rounds": 50,
+    "thread_count": 4
+  },
+  "optuna": {
+    "study_name": "catboost_rolling_mae",
+    "total_trials": 14,
+    "target_effective_configurations": 10,
+    "max_iterations": 700,
+    "startup_trials": 3,
+    "warmup_folds": 1
+  }
+}

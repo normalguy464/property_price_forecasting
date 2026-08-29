@@ -1,0 +1,11 @@
+{
+  "version": "with-tsss-1.0.0",
+  "model_path": "artifacts/model.cbm",
+  "model_sha256": "9fc24addae4e74f64d7d5389eb0af9a17e7dd8f0a84f63f779c2c041ab0f753f",
+  "model_type": "catboost",
+  "market_feature_count": 86,
+  "input_contract": "artifacts/model_package/inference_contract.json",
+  "calibration": "artifacts/model_package/calibration.json",
+  "test_status": "reused_non_confirmatory_only",
+  "production_status": "stale_requires_new_data"
+}

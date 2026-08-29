@@ -1,0 +1,67 @@
+{
+  "objective": "honest full-population rolling WAPE below 10 percent",
+  "target_wape": 0.1,
+  "target_reached": false,
+  "selected_solution": "equal blend of frozen with-TSSS, log residual market anchor and raw-MAE residual market anchor",
+  "rolling_metrics": {
+    "rows": 3334,
+    "mae_vnd_m2": 13959390.590430884,
+    "rmse_vnd_m2": 28324761.06325312,
+    "rmsle": 0.1713556580711868,
+    "wape": 0.13107596105715047,
+    "mdape": 0.08379694100467883,
+    "within_10pct": 0.5647870425914817,
+    "within_20pct": 0.8248350329934013,
+    "within_30pct": 0.9268146370725855,
+    "mean_error_vnd_m2": -1726662.2548130136
+  },
+  "rolling_comparison": {
+    "without_tsss": {
+      "rows": 3334,
+      "mae_vnd_m2": 15877092.859021582,
+      "rmse_vnd_m2": 32262101.004545927,
+      "rmsle": 0.1860788100637267,
+      "wape": 0.1490828121620485,
+      "mdape": 0.09982611315682494,
+      "within_10pct": 0.5002999400119976,
+      "within_20pct": 0.7735452909418117,
+      "within_30pct": 0.912117576484703,
+      "mean_error_vnd_m2": -3446987.2957594064
+    },
+    "with_tsss": {
+      "rows": 3334,
+      "mae_vnd_m2": 14834391.330287436,
+      "rmse_vnd_m2": 31353278.70058556,
+      "rmsle": 0.1767696826773289,
+      "wape": 0.13929204772364406,
+      "mdape": 0.09207800682452234,
+      "within_10pct": 0.5350929814037193,
+      "within_20pct": 0.8071385722855429,
+      "within_30pct": 0.9238152369526095,
+      "mean_error_vnd_m2": -1598923.1142302032
+    }
+  },
+  "reused_test_non_confirmatory": {
+    "rows": 1000,
+    "mae_vnd_m2": 14971065.569540905,
+    "rmse_vnd_m2": 35357660.807105795,
+    "rmsle": 0.17056080964490136,
+    "wape": 0.13171202132905413,
+    "mdape": 0.08248166607179176,
+    "within_10pct": 0.578,
+    "within_20pct": 0.84,
+    "within_30pct": 0.925,
+    "mean_error_vnd_m2": -3480694.413137275
+  },
+  "reused_test_interval_coverage": {
+    "0.8": 0.816,
+    "0.9": 0.907,
+    "0.95": 0.942
+  },
+  "test_used_for_selection": false,
+  "component_iterations": {
+    "with_tsss_frozen": 311,
+    "residual_market_log": 443,
+    "residual_market_raw": 295
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "source_rows": 34477,
+  "tsss_rows": 27452,
+  "tstd_rows": 7025,
+  "eligible_tsss_rows": 27425,
+  "excluded_tsss_rows": 27,
+  "date_quality": {
+    "market_date_valid": 27452,
+    "effective_date_valid": 27452,
+    "market_before_effective": 9387,
+    "market_same_day_effective": 18039,
+    "market_after_effective": 26,
+    "market_older_than_maximum": 1,
+    "market_date_min": "1921-02-09",
+    "market_date_max": "2093-08-20",
+    "age_at_collection_days_quantiles": {
+      "0": -25201.0,
+      "0.001": 0.0,
+      "0.01": 0.0,
+      "0.05": 0.0,
+      "0.5": 0.0,
+      "0.95": 22.0,
+      "0.99": 100.0,
+      "0.999": 266.2939999999944,
+      "1": 37801.0
+    }
+  },
+  "price_quality": {
+    "raw_unit_vnd_m2_quantiles": {
+      "0": 5000000.0,
+      "0.001": 23248605.08369498,
+      "0.01": 35306334.37175494,
+      "0.05": 48404840.484048404,
+      "0.5": 105882352.94117647,
+      "0.95": 305555555.5555556,
+      "0.99": 527777777.7777778,
+      "0.999": 1000000000.0,
+      "1": 1981981981.981982
+    },
+    "estimated_unit_vnd_m2_quantiles": {
+      "0": 18571428.57142857,
+      "0.001": 21700244.819353394,
+      "0.01": 33202186.97361033,
+      "0.05": 45000000.0,
+      "0.5": 98795180.72289157,
+      "0.95": 281690140.8450704,
+      "0.99": 488803675.8563071,
+      "0.999": 936388685.5102187,
+      "1": 1864864864.8648648
+    },
+    "adjusted_unit_vnd_m2_quantiles": {
+      "0": 18571428.57142857,
+      "0.001": 21698698.078115314,
+      "0.01": 32635198.135198135,
+      "0.05": 43241530.262657024,
+      "0.5": 86443376.06837606,
+      "0.95": 261336330.35425824,
+      "0.99": 455052935.51491815,
+      "0.999": 887501663.0243688,
+      "1": 1809729729.7297297
+    },
+    "raw_to_estimated_ratio_quantiles": {
+      "0": 0.10403120936280884,
+      "0.001": 1.0,
+      "0.01": 1.0,
+      "0.05": 1.0333333333333334,
+      "0.5": 1.0694444444444446,
+      "0.95": 1.1162790697674418,
+      "0.99": 1.143004511278195,
+      "0.999": 1.2076197636949457,
+      "1": 10.71428571489796
+    },
+    "raw_vs_adjusted_median_absolute_percentage_difference": 0.17736515560545826,
+    "estimated_vs_adjusted_median_absolute_percentage_difference": 0.09941203397237562
+  },
+  "report_linkage": {
+    "unique_tsss_reports": 13094,
+    "unique_tstd_reports": 7021,
+    "tsss_rows_with_report_present_in_tstd": 14122,
+    "shared_report_count": 6561
+  },
+  "transaction_status": {
+    "Chưa giao dịch": 27036,
+    "Đã giao dịch": 416
+  },
+  "information_source": {
+    "Internet": 27131,
+    "Thực địa": 272,
+    "Khác": 29,
+    "Chuyên gia tư vấn": 14,
+    "Showroom": 6
+  },
+  "field_policy": {
+    "raw_unit_price": "use separately as transaction or listing signal",
+    "estimated_unit_price": "use separately as historical analyst-adjusted signal",
+    "adjusted_land_unit_price": "exclude from initial model because derivation is insufficiently documented",
+    "Don_gia_TB_Min_Max_std_count": "exclude because they are precomputed aggregates with unknown temporal lineage",
+    "availability_date": "TSSS report effective date",
+    "market_recency_date": "transaction or listing date",
+    "same_report": "always excluded for each TSTĐ"
+  }
+}

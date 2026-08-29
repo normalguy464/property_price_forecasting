@@ -1,0 +1,43 @@
+{
+  "population": "locked_test_tstd_2025_05_to_2025_07",
+  "overall": {
+    "rows": 1000,
+    "mae_vnd_m2": 17871590.938254584,
+    "rmse_vnd_m2": 46209151.46140503,
+    "rmsle": 0.1923827234929359,
+    "wape": 0.15723018217438092,
+    "mdape": 0.09968482201418946,
+    "within_10pct": 0.5,
+    "within_20pct": 0.799,
+    "within_30pct": 0.933,
+    "mean_error_vnd_m2": -4889772.558763334
+  },
+  "interval_coverage": {
+    "0.8": {
+      "nominal": 0.8,
+      "observed": 0.827,
+      "mean_width_vnd_m2": 46367599.469453245
+    },
+    "0.9": {
+      "nominal": 0.9,
+      "observed": 0.916,
+      "mean_width_vnd_m2": 64939173.06486679
+    },
+    "0.95": {
+      "nominal": 0.95,
+      "observed": 0.953,
+      "mean_width_vnd_m2": 84170371.94595264
+    }
+  },
+  "acceptance_thresholds": {
+    "mae_vnd_m2_max": 19052512,
+    "wape_max": 0.18,
+    "within_20pct_min": 0.7
+  },
+  "acceptance_checks": {
+    "mae_vnd_m2": true,
+    "wape": true,
+    "within_20pct": true
+  },
+  "accepted": true
+}

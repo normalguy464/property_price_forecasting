@@ -1,0 +1,2490 @@
+{
+  "source": {
+    "path": "D:\\Du_doan_gia_BDS\\Train_noi.xlsx",
+    "file_name": "Train_noi.xlsx",
+    "size_bytes": 20450165,
+    "sha256": "a07b30a2313d61460707049d78baf7cf36fc7206ff1a20501469ab97557fc297",
+    "sheet_names": [
+      "Sheet1"
+    ],
+    "selected_sheet": "Sheet1",
+    "rows": 34477,
+    "columns": 90
+  },
+  "schema": {
+    "column_names": [
+      "STT",
+      "Mã kho",
+      "Phân loại kho",
+      "Mã tài sản",
+      "Số báo cáo định giá",
+      "Phân loại tài sản",
+      "Đơn vị định giá",
+      "Tỉnh/Thành phố",
+      "Thành phố/Quận/Huyện/Thị xã",
+      "Xã/Phường/Thị trấn",
+      "Xã/Phường mới",
+      "Đường phố",
+      "Đường phố1",
+      "Đoạn đường",
+      "Chi tiết",
+      "Khoảng cách đến đường chính (m)",
+      "Vị trí trong khung giá",
+      "Độ rộng ngõ/ngách nhỏ nhất (Từ đường chính đến BĐS)",
+      "Chi_so_ngo",
+      "Mục đích sử dụng đất",
+      "Diện tích (m2)",
+      "Chi_so_dientich",
+      "Kích thước mặt tiền (m)",
+      "Kích thước chiều dài",
+      "Số mặt tiền tiếp giáp",
+      "Hình dáng",
+      "Chi_so_hinhdang",
+      "Lợi thế kinh doanh",
+      "Chi_so_loithe",
+      "Thông tin quy hoạch",
+      "Thông tin tranh chấp",
+      "Yếu tố khác",
+      "Phương pháp định giá",
+      "Đơn giá quyền sử dụng đất (đ/m2)",
+      "Đơn giá quyền sử dụng đất (đ/m2)1",
+      "Loại đơn giá",
+      "Mục đích sử dụng đất có giá trị cao nhất",
+      "Giá trị định giá",
+      "Giá trị đề xuất",
+      "Tổng giá trị quyền sử dụng đất",
+      "Tổng giá trị đề xuất quyền sử dụng đất",
+      "Số lượng CTXD",
+      "Tổng giá trị định giá công trình xây dựng",
+      "Tổng giá trị đề xuất công trình xây dựng",
+      "Số lượng cây trồng",
+      "Tổng giá trị định giá cây trồng",
+      "Tổng giá trị đề xuất cây trồng",
+      "Tổng giá trị tài sản",
+      "Tình trạng giao dịch",
+      "Thời điểm giao dịch/rao bán (đ)",
+      "Giá giao dịch/rao bán (đ)",
+      "Giá ước tính (đ)",
+      "Chi phí chuyển đổi sang đất ở (đ)",
+      "Nguồn thông tin",
+      "Thông tin liên hệ",
+      "Thời điểm hiệu lực",
+      "ghep",
+      "Don_gia_TB",
+      "Min",
+      "Max",
+      "Độ lệch chuẩn",
+      "Số lượng mẫu",
+      "Tháng",
+      "Tháng1",
+      "Năm",
+      "Quý",
+      "Quý_Năm",
+      "Thang_Nam",
+      "VNI_Chi_So",
+      "VNI_khoi_luong",
+      "Lai_suat",
+      "GDP",
+      "CPI",
+      "Gold",
+      "ghep usd",
+      "USD",
+      "DT_chuan",
+      "MT_chuan",
+      "CD_chuan",
+      "LT_chuan",
+      "KC_chuan",
+      "Ngo_chuan",
+      "ty le dien tich",
+      "ty le mat tien",
+      "Ty le chieu dai",
+      "Ty le loi the",
+      "ty le KC",
+      "ty le ngo",
+      "ty le so mat",
+      "hinh dang"
+    ],
+    "column_profiles": [
+      {
+        "name": "STT",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 33283,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 2.0,
+          "0.001": 153.42399999999998,
+          "0.01": 1197.76,
+          "0.05": 6614.000000000002,
+          "0.5": 150061.0,
+          "0.95": 469897.2,
+          "0.99": 496992.24,
+          "0.999": 503071.28799999994,
+          "1.0": 503878.0
+        }
+      },
+      {
+        "name": "Mã kho",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 34477,
+        "is_constant": false,
+        "is_sensitive": true
+      },
+      {
+        "name": "Phân loại kho",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 2,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "TSSS": 27452,
+          "TSTĐ": 7025
+        }
+      },
+      {
+        "name": "Mã tài sản",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 27452,
+        "missing_rate": 0.7962409722423645,
+        "unique_non_null": 6043,
+        "is_constant": false,
+        "is_sensitive": true
+      },
+      {
+        "name": "Số báo cáo định giá",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 13554,
+        "is_constant": false,
+        "is_sensitive": true
+      },
+      {
+        "name": "Phân loại tài sản",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "top_values": {
+          "QSDĐ và tài sản gắn liền với đất": 34477
+        }
+      },
+      {
+        "name": "Đơn vị định giá",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "top_values": {
+          "MBAMC": 34477
+        }
+      },
+      {
+        "name": "Tỉnh/Thành phố",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "top_values": {
+          "Thành phố Hồ Chí Minh": 34477
+        }
+      },
+      {
+        "name": "Thành phố/Quận/Huyện/Thị xã",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Thành phố Thủ Đức": 7549,
+          "Quận Bình Tân": 5190,
+          "Quận 12": 5180,
+          "Quận Tân Phú": 3079,
+          "Quận Gò Vấp": 2844,
+          "Quận Tân Bình": 2320,
+          "Quận Bình Thạnh": 1627,
+          "Quận 7": 1536,
+          "Quận 8": 978,
+          "Quận 10": 786
+        }
+      },
+      {
+        "name": "Xã/Phường/Thị trấn",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 1799,
+        "missing_rate": 0.052179714012240044,
+        "unique_non_null": 115,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "nan": 1799,
+          "Phường Bình Hưng Hòa": 1093,
+          "Phường 15": 1001,
+          "Phường Bình Hưng Hoà B": 960,
+          "Phường 13": 916,
+          "Phường 12": 886,
+          "Phường Phú Hữu": 786,
+          "Phường 14": 775,
+          "Phường Thạnh Xuân": 762,
+          "Phường Bình Hưng Hoà A": 760
+        }
+      },
+      {
+        "name": "Xã/Phường mới",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 80,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Phường Bình Hưng Hòa": 1956,
+          "Phường Bình Tân": 1411,
+          "Phường Long Trường": 1293,
+          "Phường Thới An": 1289,
+          "Phường An Phú Đông": 1198,
+          "Phường Tân Thới Hiệp": 1155,
+          "Phường Tăng Nhơn Phú": 956,
+          "Phường Tân Sơn Nhì": 928,
+          "Phường Hiệp Bình": 886,
+          "Phường Đông Hưng Thuận": 829
+        }
+      },
+      {
+        "name": "Đường phố",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1438,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "HÀ HUY GIÁP": 737,
+          "Quốc Lộ 1": 526,
+          "Tô Ngọc Vân": 480,
+          "Nguyễn Ảnh Thủ": 477,
+          "lê đức thọ": 416,
+          "Vườn Lài": 405,
+          "Nguyễn Duy Trinh - Quận 9 cũ": 358,
+          "Phạm Văn Chiêu": 322,
+          "Quang Trung": 322,
+          "Đỗ Xuân Hợp": 273
+        }
+      },
+      {
+        "name": "Đường phố1",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1852,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Phường An Phú ĐôngHÀ HUY GIÁP": 418,
+          "Phường Thới AnTô Ngọc Vân": 384,
+          "Phường Tân Thới HiệpNguyễn Ảnh Thủ": 340,
+          "Phường Thới AnHÀ HUY GIÁP": 319,
+          "Phường An Phú ĐôngVườn Lài": 317,
+          "Phường Long TrườngNguyễn Duy Trinh - Quận 9 cũ": 315,
+          "Phường Hiệp BìnhQuốc Lộ 13 Mới": 262,
+          "Phường Thới AnLê Thị Riêng": 260,
+          "Phường An Phú ĐôngQuốc Lộ 1": 246,
+          "Phường Long TrườngVõ Chí Công": 235
+        }
+      },
+      {
+        "name": "Đoạn đường",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 28696,
+        "missing_rate": 0.8323229979406561,
+        "unique_non_null": 789,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "nan": 28696,
+          "Trọn Đường": 1611,
+          "Đầu đường - Cuối đường": 229,
+          "Lê Văn Khương - Tô Ký": 78,
+          "Quang Trung - Lê Văn Thọ": 58,
+          "Giáp Bình Tân - Ngã Tư Ga": 53,
+          "Cầu Bà Của - Cầu Phú Hữu": 52,
+          "Ngã Tư Tân Thới Hiệp - Cầu Dừa": 49,
+          "Quốc Lộ 1 - Thới An 16": 48,
+          "Quốc Lộ 1A - Vĩnh Lộc": 48
+        }
+      },
+      {
+        "name": "Chi tiết",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 11008,
+        "is_constant": false,
+        "is_sensitive": true
+      },
+      {
+        "name": "Khoảng cách đến đường chính (m)",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 177,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 9907,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 100.0,
+          "0.95": 550.0,
+          "0.99": 1200.0,
+          "0.999": 1800.0,
+          "1.0": 3000.0
+        }
+      },
+      {
+        "name": "Vị trí trong khung giá",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "VT2": 12881,
+          "VT1": 9734,
+          "VT3": 6939,
+          "VT4": 4923
+        }
+      },
+      {
+        "name": "Độ rộng ngõ/ngách nhỏ nhất (Từ đường chính đến BĐS)",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 498,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.7,
+          "0.001": 1.1,
+          "0.01": 1.5,
+          "0.05": 2.2,
+          "0.5": 6.4,
+          "0.95": 22.0,
+          "0.99": 40.0,
+          "0.999": 60.0,
+          "1.0": 90.0
+        }
+      },
+      {
+        "name": "Chi_so_ngo",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 16,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 2.0,
+          "0.01": 2.0,
+          "0.05": 4.0,
+          "0.5": 12.0,
+          "0.95": 15.0,
+          "0.99": 16.0,
+          "0.999": 16.0,
+          "1.0": 16.0
+        }
+      },
+      {
+        "name": "Mục đích sử dụng đất",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 3,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Đất ở tại đô thị": 31674,
+          "Đất ở": 2791,
+          "Đất ở tại nông thôn": 12
+        }
+      },
+      {
+        "name": "Diện tích (m2)",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 3024,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 14.8,
+          "0.001": 20.0,
+          "0.01": 25.8,
+          "0.05": 38.7,
+          "0.5": 78.0,
+          "0.95": 277.59999999999854,
+          "0.99": 752.3999999999796,
+          "0.999": 1795.0,
+          "1.0": 5400.0
+        }
+      },
+      {
+        "name": "Chi_so_dientich",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 8,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.0,
+          "0.01": 1.0,
+          "0.05": 2.0,
+          "0.5": 4.0,
+          "0.95": 7.0,
+          "0.99": 8.0,
+          "0.999": 8.0,
+          "1.0": 8.0
+        }
+      },
+      {
+        "name": "Kích thước mặt tiền (m)",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1050,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.5842800000000001,
+          "0.01": 3.0,
+          "0.05": 3.5,
+          "0.5": 4.45,
+          "0.95": 12.0,
+          "0.99": 20.0,
+          "0.999": 38.71919999999809,
+          "1.0": 68.32
+        }
+      },
+      {
+        "name": "Kích thước chiều dài",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 2132,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 3.05,
+          "0.001": 4.35952,
+          "0.01": 7.0,
+          "0.05": 10.0,
+          "0.5": 17.0,
+          "0.95": 30.0,
+          "0.99": 47.0,
+          "0.999": 80.0,
+          "1.0": 250.0
+        }
+      },
+      {
+        "name": "Số mặt tiền tiếp giáp",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 3,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.0,
+          "0.01": 1.0,
+          "0.05": 1.0,
+          "0.5": 1.0,
+          "0.95": 2.0,
+          "0.99": 2.0,
+          "0.999": 3.0,
+          "1.0": 3.0
+        }
+      },
+      {
+        "name": "Hình dáng",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 51,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Cân đối": 29136,
+          "Cân đối ": 2674,
+          "Không cân đối": 829,
+          "Cân đối": 466,
+          "Khá cân đối": 457,
+          "Khá Cân đối": 140,
+          "cân đối": 101,
+          "Nở hậu": 86,
+          "Tóp hậu": 83,
+          "Khá cân đối ": 72
+        }
+      },
+      {
+        "name": "Chi_so_hinhdang",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 12,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.8,
+          "0.001": 0.9,
+          "0.01": 0.9300000000000049,
+          "0.05": 0.96,
+          "0.5": 1.0,
+          "0.95": 1.0,
+          "0.99": 1.0,
+          "0.999": 1.05,
+          "1.0": 1.05
+        }
+      },
+      {
+        "name": "Lợi thế kinh doanh",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Trung bình": 29655,
+          "Khá": 4409,
+          "Tốt": 394,
+          "Kém": 19
+        }
+      },
+      {
+        "name": "Chi_so_loithe",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 2.0,
+          "0.01": 2.0,
+          "0.05": 2.0,
+          "0.5": 2.0,
+          "0.95": 3.0,
+          "0.99": 4.0,
+          "0.999": 4.0,
+          "1.0": 4.0
+        }
+      },
+      {
+        "name": "Thông tin quy hoạch",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 20107,
+        "missing_rate": 0.5832003944658758,
+        "unique_non_null": 1,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "nan": 20107,
+          "Không": 14370
+        }
+      },
+      {
+        "name": "Thông tin tranh chấp",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 27452,
+        "missing_rate": 0.7962409722423645,
+        "unique_non_null": 1,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "nan": 27452,
+          "Không": 7025
+        }
+      },
+      {
+        "name": "Yếu tố khác",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 2191,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Không": 26691,
+          "Hẻm cấp 2": 276,
+          "Hẻm cụt": 246,
+          "Hẻm cấp 1": 236,
+          "Hẻm thông": 197,
+          "Đối diện công viên": 181,
+          "Bình thường": 173,
+          "Không ": 155,
+          "Đường đâm": 93,
+          "Đường bê tông": 86
+        }
+      },
+      {
+        "name": "Phương pháp định giá",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "top_values": {
+          "PP so sánh": 34477
+        }
+      },
+      {
+        "name": "Đơn giá quyền sử dụng đất (đ/m2)",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 26493,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 17043802.0,
+          "0.001": 21698698.0,
+          "0.01": 32407384.36,
+          "0.05": 43162505.800000004,
+          "0.5": 86154333.0,
+          "0.95": 259307264.19999972,
+          "0.99": 446492847.03999776,
+          "0.999": 880465962.0,
+          "1.0": 1809729730.0
+        }
+      },
+      {
+        "name": "Đơn giá quyền sử dụng đất (đ/m2)1",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 26539,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 17043802.0,
+          "0.001": 21698698.078115314,
+          "0.01": 32407384.615384616,
+          "0.05": 43162505.800000004,
+          "0.5": 86144717.0,
+          "0.95": 259307264.188235,
+          "0.99": 446492846.9252151,
+          "0.999": 880465962.4413146,
+          "1.0": 1809729729.7297297
+        }
+      },
+      {
+        "name": "Loại đơn giá",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "top_values": {
+          "đ/m ngang": 34477
+        }
+      },
+      {
+        "name": "Mục đích sử dụng đất có giá trị cao nhất",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 3,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Đất ở tại đô thị": 31674,
+          "Đất ở": 2791,
+          "Đất ở tại nông thôn": 12
+        }
+      },
+      {
+        "name": "Giá trị định giá",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 27100,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 546,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 2675920000.56,
+          "0.5": 6763750000.0,
+          "0.95": 33440100015.19993,
+          "0.99": 82608800005.25575,
+          "0.999": 238128799777.20114,
+          "1.0": 855000000000.0
+        }
+      },
+      {
+        "name": "Giá trị đề xuất",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 27100,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 546,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 2675920000.56,
+          "0.5": 6763750000.0,
+          "0.95": 33440100015.19993,
+          "0.99": 82608800005.25575,
+          "0.999": 238128799777.20114,
+          "1.0": 855000000000.0
+        }
+      },
+      {
+        "name": "Tổng giá trị quyền sử dụng đất",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 27101,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 546,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 2679999995.02,
+          "0.5": 6800000020.0,
+          "0.95": 34358879998.479965,
+          "0.99": 86061473284.63974,
+          "0.999": 249067306532.29132,
+          "1.0": 914319544566.0
+        }
+      },
+      {
+        "name": "Tổng giá trị đề xuất quyền sử dụng đất",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 27101,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 546,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 2679999995.02,
+          "0.5": 6800000020.0,
+          "0.95": 34358879998.479965,
+          "0.99": 86061473284.63974,
+          "0.999": 249067306532.29132,
+          "1.0": 914319544566.0
+        }
+      },
+      {
+        "name": "Số lượng CTXD",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 14320,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 1195,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 1.0,
+          "0.5": 5372960000.0,
+          "0.95": 29680100000.0,
+          "0.99": 75000000000.0,
+          "0.999": 220733599999.99667,
+          "1.0": 855000000000.0
+        }
+      },
+      {
+        "name": "Tổng giá trị định giá công trình xây dựng",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 9424,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 7437,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 728000000.0,
+          "0.95": 3347603999.9999785,
+          "0.99": 8550000000.0,
+          "0.999": 28632660000.0,
+          "1.0": 142500000000.0
+        }
+      },
+      {
+        "name": "Tổng giá trị đề xuất công trình xây dựng",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 9351,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 7886,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 708400000.0,
+          "0.95": 3300575999.9999914,
+          "0.99": 8448614999.999953,
+          "0.999": 28632660000.0,
+          "1.0": 142500000000.0
+        }
+      },
+      {
+        "name": "Số lượng cây trồng",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 34477,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "0.999": 0.0,
+          "1.0": 0.0
+        }
+      },
+      {
+        "name": "Tổng giá trị định giá cây trồng",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 34477,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "0.999": 0.0,
+          "1.0": 0.0
+        }
+      },
+      {
+        "name": "Tổng giá trị đề xuất cây trồng",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 34477,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "0.999": 0.0,
+          "1.0": 0.0
+        }
+      },
+      {
+        "name": "Tổng giá trị tài sản",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 6681,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 27452,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 14624604918.199945,
+          "0.99": 40867425801.27971,
+          "0.999": 125166890345.6957,
+          "1.0": 751978945118.0
+        }
+      },
+      {
+        "name": "Tình trạng giao dịch",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 7025,
+        "missing_rate": 0.20375902775763552,
+        "unique_non_null": 2,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Chưa giao dịch": 27036,
+          "nan": 7025,
+          "Đã giao dịch": 416
+        }
+      },
+      {
+        "name": "Thời điểm giao dịch/rao bán (đ)",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 7025,
+        "missing_rate": 0.20375902775763552,
+        "unique_non_null": 578,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "nan": 7025,
+          "20/06/2024": 173,
+          "09/04/2025": 145,
+          "10/04/2025": 143,
+          "12/02/2025": 134,
+          "22/05/2024": 132,
+          "01/04/2025": 131,
+          "06/06/2024": 127,
+          "17/06/2024": 124,
+          "14/04/2025": 121
+        }
+      },
+      {
+        "name": "Giá giao dịch/rao bán (đ)",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1090,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 7025,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 6500000000.0,
+          "0.95": 34500000000.0,
+          "0.99": 85000000000.0,
+          "0.999": 255000000000.0,
+          "1.0": 950000000000.0
+        }
+      },
+      {
+        "name": "Giá ước tính (đ)",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1389,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 7025,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 6100000000.0,
+          "0.95": 32000000000.0,
+          "0.99": 80000000000.0,
+          "0.999": 230000000000.0,
+          "1.0": 855000000000.0
+        }
+      },
+      {
+        "name": "Chi phí chuyển đổi sang đất ở (đ)",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 34477,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "0.999": 0.0,
+          "1.0": 0.0
+        }
+      },
+      {
+        "name": "Nguồn thông tin",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 7025,
+        "missing_rate": 0.20375902775763552,
+        "unique_non_null": 5,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Internet": 27131,
+          "nan": 7025,
+          "Thực địa": 272,
+          "Khác": 29,
+          "Chuyên gia tư vấn": 14,
+          "Showroom": 6
+        }
+      },
+      {
+        "name": "Thông tin liên hệ",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 12911,
+        "missing_rate": 0.3744815384169156,
+        "unique_non_null": 10641,
+        "is_constant": false,
+        "is_sensitive": true
+      },
+      {
+        "name": "Thời điểm hiệu lực",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 474,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "12/03/2025": 190,
+          "20/06/2024": 188,
+          "10/04/2025": 172,
+          "26/06/2024": 170,
+          "11/04/2025": 169,
+          "19/03/2024": 167,
+          "24/04/2025": 158,
+          "19/12/2024": 153,
+          "06/03/2024": 151,
+          "22/05/2024": 150
+        }
+      },
+      {
+        "name": "ghep",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 7688,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Phường Long TrườngVõ Chí CôngVT214": 161,
+          "Phường Long TrườngNguyễn Duy Trinh - Quận 9 cũVT213": 161,
+          "Phường Phước LongĐỗ Xuân HợpVT214": 100,
+          "Phường Tân Thới HiệpNguyễn Ảnh ThủVT213": 85,
+          "Phường An LạcCác Đường Số 4A 5A 6A 6B 7A 8B 8C 12 12A 12B 16 18 19A 19B 19C 19D 19E 19F 21 21A 21E 23 25 25A 26 28A 31 31A 32B 33A 33B 34B 39 Thuộc Khu dân cư Bình Trị Đông B (P. Btđ B P. An Lạc A)VT114": 84,
+          "Phường Long TrườngBưng Ông thoànVT214": 81,
+          "Phường Cát LáiNguyễn Thị ĐịnhVT214": 80,
+          "Phường Cát LáiNguyễn Thị ĐịnhVT215": 80,
+          "Phường Thới AnTô Ngọc VânVT213": 79,
+          "Phường Long TrườngTrường LưuVT213": 72
+        }
+      },
+      {
+        "name": "Don_gia_TB",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 7668,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 19601873.536299765,
+          "0.001": 27303108.924582157,
+          "0.01": 37634429.22413793,
+          "0.05": 46262566.120860696,
+          "0.5": 85535599.51758482,
+          "0.95": 257186891.07891342,
+          "0.99": 438232730.61892986,
+          "0.999": 886291317.5805926,
+          "1.0": 1612851134.6905897
+        }
+      },
+      {
+        "name": "Min",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 7266,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 15066291.68340699,
+          "0.001": 15066291.68340699,
+          "0.01": 21203595.0,
+          "0.05": 29083354.972734354,
+          "0.5": 70230769.23076923,
+          "0.95": 223517407.5298786,
+          "0.99": 374480000.0,
+          "0.999": 779666666.6666666,
+          "1.0": 1401668478.2608695
+        }
+      },
+      {
+        "name": "Max",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 7255,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 20000000.0,
+          "0.001": 32173913.04347826,
+          "0.01": 43042160.693333335,
+          "0.05": 55493356.0,
+          "0.5": 102538461.53846154,
+          "0.95": 298219476.74418604,
+          "0.99": 546968336.8421053,
+          "0.999": 989011592.178771,
+          "1.0": 1809729729.7297297
+        }
+      },
+      {
+        "name": "Độ lệch chuẩn",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 257,
+        "missing_rate": 0.007454244858891435,
+        "unique_non_null": 7206,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 444,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 1625800.4647983918,
+          "0.5": 9249884.679336792,
+          "0.95": 30313717.63114348,
+          "0.99": 66719738.04619645,
+          "0.999": 188197492.93677568,
+          "1.0": 230409596.0991139
+        }
+      },
+      {
+        "name": "Số lượng mẫu",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 107,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.0,
+          "0.01": 2.0,
+          "0.05": 2.0,
+          "0.5": 12.0,
+          "0.95": 95.0,
+          "0.99": 211.0,
+          "0.999": 310.0,
+          "1.0": 310.0
+        }
+      },
+      {
+        "name": "Tháng",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 12,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.0,
+          "0.01": 1.0,
+          "0.05": 2.0,
+          "0.5": 6.0,
+          "0.95": 12.0,
+          "0.99": 12.0,
+          "0.999": 12.0,
+          "1.0": 12.0
+        }
+      },
+      {
+        "name": "Tháng1",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 12,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.0,
+          "0.01": 1.0,
+          "0.05": 2.0,
+          "0.5": 6.0,
+          "0.95": 12.0,
+          "0.99": 12.0,
+          "0.999": 12.0,
+          "1.0": 12.0
+        }
+      },
+      {
+        "name": "Năm",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 2,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 2024.0,
+          "0.001": 2024.0,
+          "0.01": 2024.0,
+          "0.05": 2024.0,
+          "0.5": 2024.0,
+          "0.95": 2025.0,
+          "0.99": 2025.0,
+          "0.999": 2025.0,
+          "1.0": 2025.0
+        }
+      },
+      {
+        "name": "Quý",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "Q2": 12443,
+          "Q1": 7579,
+          "Q3": 7554,
+          "Q4": 6901
+        }
+      },
+      {
+        "name": "Quý_Năm",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 7,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "2024-Q4": 6901,
+          "2024-Q2": 6859,
+          "2024-Q3": 5755,
+          "2025-Q2": 5584,
+          "2025-Q1": 4971,
+          "2024-Q1": 2608,
+          "2025-Q3": 1799
+        }
+      },
+      {
+        "name": "Thang_Nam",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "2025-04": 2677,
+          "2024-03": 2608,
+          "2024-05": 2426,
+          "2024-12": 2402,
+          "2024-06": 2339,
+          "2024-10": 2323,
+          "2024-11": 2176,
+          "2024-07": 2096,
+          "2024-04": 2094,
+          "2024-08": 2002
+        }
+      },
+      {
+        "name": "VNI_Chi_So",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1229.8,
+          "0.001": 1229.8,
+          "0.01": 1229.8,
+          "0.05": 1229.8,
+          "0.5": 1264.7142857143037,
+          "0.95": 1502.0,
+          "0.99": 1502.0,
+          "0.999": 1502.0,
+          "1.0": 1502.0
+        }
+      },
+      {
+        "name": "VNI_khoi_luong",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 479408084.5882378,
+          "0.001": 479408084.5882378,
+          "0.01": 479408084.5882378,
+          "0.05": 583491231.0,
+          "0.5": 881424960.681801,
+          "0.95": 1650159600.0,
+          "0.99": 1650159600.0,
+          "0.999": 1650159600.0,
+          "1.0": 1650159600.0
+        }
+      },
+      {
+        "name": "Lai_suat",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 14,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.054999999999999744,
+          "0.001": 0.054999999999999744,
+          "0.01": 0.054999999999999744,
+          "0.05": 0.055999999999998745,
+          "0.5": 0.05700000000000084,
+          "0.95": 0.06,
+          "0.99": 0.06,
+          "0.999": 0.06,
+          "1.0": 0.06
+        }
+      },
+      {
+        "name": "GDP",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 14,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.05980000000000046,
+          "0.001": 0.05980000000000046,
+          "0.01": 0.05980000000000046,
+          "0.05": 0.05980000000000046,
+          "0.5": 0.073,
+          "0.95": 0.07550000000000152,
+          "0.99": 0.07550000000000152,
+          "0.999": 0.07550000000000152,
+          "1.0": 0.07550000000000152
+        }
+      },
+      {
+        "name": "CPI",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 14,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.028700000000000437,
+          "0.001": 0.028700000000000437,
+          "0.01": 0.028700000000000437,
+          "0.05": 0.028700000000000437,
+          "0.5": 0.0348000000000004,
+          "0.95": 0.043900000000000584,
+          "0.99": 0.043900000000000584,
+          "0.999": 0.043900000000000584,
+          "1.0": 0.043900000000000584
+        }
+      },
+      {
+        "name": "Gold",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 2161.8699951171875,
+          "0.001": 2161.8699951171875,
+          "0.01": 2161.8699951171875,
+          "0.05": 2161.8699951171875,
+          "0.5": 2643.580950055766,
+          "0.95": 3402.0,
+          "0.99": 3402.0,
+          "0.999": 3402.0,
+          "1.0": 3402.0
+        }
+      },
+      {
+        "name": "ghep usd",
+        "dtype": "str",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "top_values": {
+          "2025-4": 2677,
+          "2024-3": 2608,
+          "2024-5": 2426,
+          "2024-12": 2402,
+          "2024-6": 2339,
+          "2024-10": 2323,
+          "2024-11": 2176,
+          "2024-7": 2096,
+          "2024-4": 2094,
+          "2024-8": 2002
+        }
+      },
+      {
+        "name": "USD",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 17,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 24650.095238095237,
+          "0.001": 24650.095238095237,
+          "0.01": 24650.095238095237,
+          "0.05": 24707.809523809523,
+          "0.5": 25406.15,
+          "0.95": 26134.0,
+          "0.99": 26134.0,
+          "0.999": 26134.0,
+          "1.0": 26134.0
+        }
+      },
+      {
+        "name": "DT_chuan",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 60.0,
+          "0.001": 60.0,
+          "0.01": 60.0,
+          "0.05": 60.0,
+          "0.5": 60.0,
+          "0.95": 60.0,
+          "0.99": 60.0,
+          "0.999": 60.0,
+          "1.0": 60.0
+        }
+      },
+      {
+        "name": "MT_chuan",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 5.0,
+          "0.001": 5.0,
+          "0.01": 5.0,
+          "0.05": 5.0,
+          "0.5": 5.0,
+          "0.95": 5.0,
+          "0.99": 5.0,
+          "0.999": 5.0,
+          "1.0": 5.0
+        }
+      },
+      {
+        "name": "CD_chuan",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 1,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 12.0,
+          "0.001": 12.0,
+          "0.01": 12.0,
+          "0.05": 12.0,
+          "0.5": 12.0,
+          "0.95": 12.0,
+          "0.99": 12.0,
+          "0.999": 12.0,
+          "1.0": 12.0
+        }
+      },
+      {
+        "name": "LT_chuan",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 1.0,
+          "0.001": 1.0,
+          "0.01": 1.0,
+          "0.05": 1.0,
+          "0.5": 3.0,
+          "0.95": 4.0,
+          "0.99": 4.0,
+          "0.999": 4.0,
+          "1.0": 4.0
+        }
+      },
+      {
+        "name": "KC_chuan",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 9734,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 50.0,
+          "0.95": 200.0,
+          "0.99": 200.0,
+          "0.999": 200.0,
+          "1.0": 200.0
+        }
+      },
+      {
+        "name": "Ngo_chuan",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 4,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 2.0,
+          "0.001": 2.0,
+          "0.01": 2.0,
+          "0.05": 2.0,
+          "0.5": 5.0,
+          "0.95": 10.0,
+          "0.99": 10.0,
+          "0.999": 10.0,
+          "1.0": 10.0
+        }
+      },
+      {
+        "name": "ty le dien tich",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 34477,
+        "missing_rate": 1.0,
+        "unique_non_null": 0,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": null,
+          "0.001": null,
+          "0.01": null,
+          "0.05": null,
+          "0.5": null,
+          "0.95": null,
+          "0.99": null,
+          "0.999": null,
+          "1.0": null
+        }
+      },
+      {
+        "name": "ty le mat tien",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 34477,
+        "missing_rate": 1.0,
+        "unique_non_null": 0,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": null,
+          "0.001": null,
+          "0.01": null,
+          "0.05": null,
+          "0.5": null,
+          "0.95": null,
+          "0.99": null,
+          "0.999": null,
+          "1.0": null
+        }
+      },
+      {
+        "name": "Ty le chieu dai",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 8,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 27064,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.0,
+          "0.001": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 3.0,
+          "0.99": 7.0,
+          "0.999": 8.0,
+          "1.0": 8.0
+        }
+      },
+      {
+        "name": "Ty le loi the",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 34477,
+        "missing_rate": 1.0,
+        "unique_non_null": 0,
+        "is_constant": true,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": null,
+          "0.001": null,
+          "0.01": null,
+          "0.05": null,
+          "0.5": null,
+          "0.95": null,
+          "0.99": null,
+          "0.999": null,
+          "1.0": null
+        }
+      },
+      {
+        "name": "ty le KC",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 349,
+        "missing_rate": 0.010122690489311715,
+        "unique_non_null": 8,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 21826,
+        "negative_count": 506,
+        "quantiles": {
+          "0.0": -1.0,
+          "0.001": -1.0,
+          "0.01": -1.0,
+          "0.05": 0.0,
+          "0.5": 0.0,
+          "0.95": 3.0,
+          "0.99": 6.0,
+          "0.999": 6.0,
+          "1.0": 6.0
+        }
+      },
+      {
+        "name": "ty le ngo",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 3482,
+        "missing_rate": 0.10099486614264583,
+        "unique_non_null": 18,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 4583,
+        "negative_count": 24588,
+        "quantiles": {
+          "0.0": -16.0,
+          "0.001": -16.0,
+          "0.01": -16.0,
+          "0.05": -14.0,
+          "0.5": -7.0,
+          "0.95": 4.0,
+          "0.99": 7.0,
+          "0.999": 16.0,
+          "1.0": 16.0
+        }
+      },
+      {
+        "name": "ty le so mat",
+        "dtype": "int64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 3,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 31410,
+        "negative_count": 3067,
+        "quantiles": {
+          "0.0": -10.0,
+          "0.001": -10.0,
+          "0.01": -5.0,
+          "0.05": -5.0,
+          "0.5": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "0.999": 0.0,
+          "1.0": 0.0
+        }
+      },
+      {
+        "name": "hinh dang",
+        "dtype": "float64",
+        "rows": 34477,
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_non_null": 12,
+        "is_constant": false,
+        "is_sensitive": false,
+        "zero_count": 0,
+        "negative_count": 0,
+        "quantiles": {
+          "0.0": 0.9523809523809523,
+          "0.001": 0.9523809523809523,
+          "0.01": 1.0,
+          "0.05": 1.0,
+          "0.5": 1.0,
+          "0.95": 1.0416666666666667,
+          "0.99": 1.0752688172042955,
+          "0.999": 1.1111111111111112,
+          "1.0": 1.25
+        }
+      }
+    ],
+    "all_null_columns": [
+      "ty le dien tich",
+      "ty le mat tien",
+      "Ty le loi the"
+    ],
+    "constant_columns": [
+      "Phân loại tài sản",
+      "Đơn vị định giá",
+      "Tỉnh/Thành phố",
+      "Phương pháp định giá",
+      "Loại đơn giá",
+      "Số lượng cây trồng",
+      "Tổng giá trị định giá cây trồng",
+      "Tổng giá trị đề xuất cây trồng",
+      "Chi phí chuyển đổi sang đất ở (đ)",
+      "DT_chuan",
+      "MT_chuan",
+      "CD_chuan",
+      "ty le dien tich",
+      "ty le mat tien",
+      "Ty le loi the"
+    ]
+  },
+  "target": {
+    "selected_provisional_target": "Đơn giá quyền sử dụng đất (đ/m2)1",
+    "duplicate_target": "Đơn giá quyền sử dụng đất (đ/m2)",
+    "selected_target_summary": {
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 17043802.0,
+        "0.001": 21698698.078115314,
+        "0.01": 32407384.615384616,
+        "0.05": 43162505.800000004,
+        "0.5": 86144717.0,
+        "0.95": 259307264.188235,
+        "0.99": 446492846.9252151,
+        "0.999": 880465962.4413146,
+        "1.0": 1809729729.7297297
+      }
+    },
+    "pearson_correlation": 0.9999821412889329,
+    "relative_error_below_1e_6": 34474,
+    "relative_error_above_1_percent": 3,
+    "absolute_difference_median": 0.11985687911510468,
+    "absolute_difference_max": 59433962.60377359,
+    "declared_unit_counts": {
+      "đ/m ngang": 34477
+    },
+    "land_total_divided_by_area_relative_error_below_1e_6": 33521,
+    "land_total_divided_by_area_relative_error_above_1_percent": 933
+  },
+  "time": {
+    "effective_date_min": "2024-03-01T00:00:00",
+    "effective_date_max": "2025-07-31T00:00:00",
+    "effective_date_parse_failures": 0,
+    "transaction_date_min": "1921-02-09T00:00:00",
+    "transaction_date_max": "2093-08-20T00:00:00",
+    "transaction_date_parse_failures_non_null": 0,
+    "transaction_after_effective_count": 26,
+    "transaction_same_day_count": 18039,
+    "transaction_more_than_10_years_before_count": 1,
+    "effective_month_year_mismatch_count": 0,
+    "month_count": 17,
+    "monthly_target_summary": [
+      {
+        "Thang_Nam": "2024-03",
+        "rows": 2608,
+        "target_mean": 105321326.54372258,
+        "target_median": 83322916.66666666,
+        "target_p05": 44037207.45,
+        "target_p95": 243278176.79558018
+      },
+      {
+        "Thang_Nam": "2024-04",
+        "rows": 2094,
+        "target_mean": 109116220.52528678,
+        "target_median": 85881582.80410355,
+        "target_p05": 43829441.21515152,
+        "target_p95": 237891579.3614642
+      },
+      {
+        "Thang_Nam": "2024-05",
+        "rows": 2426,
+        "target_mean": 108483412.55410446,
+        "target_median": 86782608.69565217,
+        "target_p05": 42557750.75987842,
+        "target_p95": 244322916.75
+      },
+      {
+        "Thang_Nam": "2024-06",
+        "rows": 2339,
+        "target_mean": 113648217.26476151,
+        "target_median": 84687500.0,
+        "target_p05": 42751625.89928058,
+        "target_p95": 281433292.68292665
+      },
+      {
+        "Thang_Nam": "2024-07",
+        "rows": 2096,
+        "target_mean": 108993844.07610327,
+        "target_median": 83826886.63157895,
+        "target_p05": 42500000.0,
+        "target_p95": 267175403.22580644
+      },
+      {
+        "Thang_Nam": "2024-08",
+        "rows": 2002,
+        "target_mean": 110901038.52437754,
+        "target_median": 86709765.625,
+        "target_p05": 39896368.76947041,
+        "target_p95": 269116722.08461475
+      },
+      {
+        "Thang_Nam": "2024-09",
+        "rows": 1657,
+        "target_mean": 107598139.67829318,
+        "target_median": 81084821.42857143,
+        "target_p05": 41894903.22580645,
+        "target_p95": 249565999.99999997
+      },
+      {
+        "Thang_Nam": "2024-10",
+        "rows": 2323,
+        "target_mean": 104403625.45802762,
+        "target_median": 84567901.2345679,
+        "target_p05": 40014855.1,
+        "target_p95": 246992893.40101522
+      },
+      {
+        "Thang_Nam": "2024-11",
+        "rows": 2176,
+        "target_mean": 114223031.2260352,
+        "target_median": 89277047.69851203,
+        "target_p05": 44006218.211538464,
+        "target_p95": 270125000.0
+      },
+      {
+        "Thang_Nam": "2024-12",
+        "rows": 2402,
+        "target_mean": 111366930.45215496,
+        "target_median": 85272727.27272727,
+        "target_p05": 42561353.957695425,
+        "target_p95": 266418863.63636243
+      },
+      {
+        "Thang_Nam": "2025-01",
+        "rows": 1497,
+        "target_mean": 105288507.13129874,
+        "target_median": 81965138.8888889,
+        "target_p05": 40000000.0,
+        "target_p95": 255351111.11111143
+      },
+      {
+        "Thang_Nam": "2025-02",
+        "rows": 1980,
+        "target_mean": 109237547.47768214,
+        "target_median": 86584066.0,
+        "target_p05": 43306475.01602271,
+        "target_p95": 266836041.15479112
+      },
+      {
+        "Thang_Nam": "2025-03",
+        "rows": 1494,
+        "target_mean": 111644094.88409682,
+        "target_median": 85664160.4010025,
+        "target_p05": 45010837.40849862,
+        "target_p95": 263749239.1965913
+      },
+      {
+        "Thang_Nam": "2025-04",
+        "rows": 2677,
+        "target_mean": 108537219.1604205,
+        "target_median": 86979591.8367347,
+        "target_p05": 44429295.774647884,
+        "target_p95": 243219219.04864866
+      },
+      {
+        "Thang_Nam": "2025-05",
+        "rows": 1872,
+        "target_mean": 119126066.8701774,
+        "target_median": 95331790.0,
+        "target_p05": 49184480.87431694,
+        "target_p95": 268903913.46153843
+      },
+      {
+        "Thang_Nam": "2025-06",
+        "rows": 1035,
+        "target_mean": 124885578.94140607,
+        "target_median": 87670588.23529412,
+        "target_p05": 47265366.89681626,
+        "target_p95": 284580655.28214765
+      },
+      {
+        "Thang_Nam": "2025-07",
+        "rows": 1799,
+        "target_mean": 114673820.12341169,
+        "target_median": 92012244.89795919,
+        "target_p05": 49171010.617292315,
+        "target_p95": 244774318.18181792
+      }
+    ],
+    "macro_consistency": {
+      "VNI_Chi_So": {
+        "unique_total": 17,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      },
+      "VNI_khoi_luong": {
+        "unique_total": 17,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      },
+      "Lai_suat": {
+        "unique_total": 14,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      },
+      "GDP": {
+        "unique_total": 14,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      },
+      "CPI": {
+        "unique_total": 14,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      },
+      "Gold": {
+        "unique_total": 17,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      },
+      "USD": {
+        "unique_total": 17,
+        "months_with_multiple_values": 0,
+        "missing_count": 0
+      }
+    }
+  },
+  "business_structure": {
+    "warehouse_class_summary": [
+      {
+        "class": "TSSS",
+        "rows": 27452,
+        "reports": 13094,
+        "target_median": 86443376.06837606,
+        "missing_transaction_date": 0,
+        "missing_asset_id": 27452,
+        "construction_count_above_100": 27452,
+        "land_total_zero": 546
+      },
+      {
+        "class": "TSTĐ",
+        "rows": 7025,
+        "reports": 7021,
+        "target_median": 85338585.0,
+        "missing_transaction_date": 7025,
+        "missing_asset_id": 0,
+        "construction_count_above_100": 0,
+        "land_total_zero": 0
+      }
+    ],
+    "reports": 13554,
+    "report_size_quantiles": {
+      "0.0": 1.0,
+      "0.5": 3.0,
+      "0.9": 4.0,
+      "0.99": 4.0,
+      "1.0": 9.0
+    },
+    "reports_spanning_multiple_months": 0,
+    "class_rows": {
+      "TSSS": 27452,
+      "TSTĐ": 7025
+    },
+    "class_rows_by_report": {
+      "TSSS": {
+        "3": 5839,
+        "1": 4625,
+        "2": 2615,
+        "0": 460,
+        "6": 6,
+        "4": 5,
+        "5": 3,
+        "9": 1
+      },
+      "TSTĐ": {
+        "1": 7017,
+        "0": 6533,
+        "2": 4
+      }
+    }
+  },
+  "quality": {
+    "full_row_duplicates": 0,
+    "warehouse_id_duplicates": 0,
+    "sequence_id_duplicates": 1194,
+    "construction_count_above_100": 27452,
+    "target_above_official_2024_table_max_count": 95,
+    "target_above_1_billion_count": 11,
+    "target_above_official_max_by_district": {
+      "Quận 1": 72,
+      "Thành phố Thủ Đức": 19,
+      "Quận 3": 2,
+      "Quận Phú Nhuận": 1,
+      "Quận Bình Thạnh": 1
+    },
+    "rare_categories": {
+      "Xã/Phường/Thị trấn": {
+        "unique_non_null": 115,
+        "singleton_categories": 1,
+        "rows_in_categories_below_5": 1,
+        "missing_count": 1799
+      },
+      "Xã/Phường mới": {
+        "unique_non_null": 80,
+        "singleton_categories": 0,
+        "rows_in_categories_below_5": 0,
+        "missing_count": 0
+      },
+      "Đường phố": {
+        "unique_non_null": 1438,
+        "singleton_categories": 73,
+        "rows_in_categories_below_5": 1272,
+        "missing_count": 0
+      },
+      "Đường phố1": {
+        "unique_non_null": 1852,
+        "singleton_categories": 102,
+        "rows_in_categories_below_5": 1782,
+        "missing_count": 0
+      },
+      "Chi tiết": {
+        "unique_non_null": 11008,
+        "singleton_categories": 7486,
+        "rows_in_categories_below_5": 14636,
+        "missing_count": 0
+      }
+    },
+    "shape_label_unique_count": 51,
+    "shape_label_top_values": {
+      "Cân đối": 29136,
+      "Cân đối ": 2674,
+      "Không cân đối": 829,
+      "Cân đối": 466,
+      "Khá cân đối": 457,
+      "Khá Cân đối": 140,
+      "cân đối": 101,
+      "Nở hậu": 86,
+      "Tóp hậu": 83,
+      "Khá cân đối ": 72,
+      "Không cân đối ": 62,
+      "Cân Đối": 60,
+      "Hình chữ L": 48,
+      "Không cân đối": 38,
+      "Hình L": 35
+    }
+  },
+  "geography": {
+    "district_target_summary": [
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 1",
+        "rows": 689,
+        "target_mean": 384374268.58864677,
+        "target_median": 323168831.16883117,
+        "target_p05": 144624518.92727274,
+        "target_p95": 853144761.904762
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 10",
+        "rows": 786,
+        "target_mean": 199570415.4776011,
+        "target_median": 171567882.53921568,
+        "target_p05": 93036102.27439024,
+        "target_p95": 373833401.0
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 11",
+        "rows": 414,
+        "target_mean": 167018717.8886632,
+        "target_median": 147993432.9710145,
+        "target_p05": 82128775.18315017,
+        "target_p95": 295859726.744186
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 12",
+        "rows": 5180,
+        "target_mean": 61457278.136734866,
+        "target_median": 57815906.0,
+        "target_p05": 35206704.22535211,
+        "target_p95": 102531047.61904763
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 3",
+        "rows": 537,
+        "target_mean": 249978305.2343743,
+        "target_median": 195545454.54545453,
+        "target_p05": 105346942.52873564,
+        "target_p95": 541544208.2111436
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 4",
+        "rows": 200,
+        "target_mean": 184808812.85956618,
+        "target_median": 161697000.0846485,
+        "target_p05": 63103452.685421996,
+        "target_p95": 409678571.4285714
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 5",
+        "rows": 376,
+        "target_mean": 262908780.44246453,
+        "target_median": 262598314.60674158,
+        "target_p05": 131731674.75,
+        "target_p95": 439032258.0645161
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 6",
+        "rows": 499,
+        "target_mean": 128643304.12192999,
+        "target_median": 120657599.0,
+        "target_p05": 68403055.17339532,
+        "target_p95": 237764593.24398825
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 7",
+        "rows": 1536,
+        "target_mean": 140281795.20053208,
+        "target_median": 128827309.76744187,
+        "target_p05": 59724371.27578304,
+        "target_p95": 286956665.622093
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận 8",
+        "rows": 978,
+        "target_mean": 93539980.6216201,
+        "target_median": 81429805.49199085,
+        "target_p05": 46088560.88560886,
+        "target_p95": 193943379.69285712
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận Bình Thạnh",
+        "rows": 1627,
+        "target_mean": 137931691.96817473,
+        "target_median": 119636363.63636364,
+        "target_p05": 75742897.72727273,
+        "target_p95": 269484891.20769215
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận Bình Tân",
+        "rows": 5190,
+        "target_mean": 73774112.28126319,
+        "target_median": 69545454.54545455,
+        "target_p05": 43142347.5,
+        "target_p95": 115916666.66666667
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận Gò Vấp",
+        "rows": 2844,
+        "target_mean": 99093610.46176897,
+        "target_median": 90558167.09596097,
+        "target_p05": 62448024.27777778,
+        "target_p95": 161832512.5
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận Phú Nhuận",
+        "rows": 673,
+        "target_mean": 189293290.63042206,
+        "target_median": 161326860.84142396,
+        "target_p05": 101252114.97730711,
+        "target_p95": 342065972.2222222
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận Tân Bình",
+        "rows": 2320,
+        "target_mean": 140094175.37983152,
+        "target_median": 130029995.0,
+        "target_p05": 73580273.85,
+        "target_p95": 239658498.73722875
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Quận Tân Phú",
+        "rows": 3079,
+        "target_mean": 106408081.54864107,
+        "target_median": 98234146.34146342,
+        "target_p05": 68377252.9,
+        "target_p95": 174414880.95238093
+      },
+      {
+        "Thành phố/Quận/Huyện/Thị xã": "Thành phố Thủ Đức",
+        "rows": 7549,
+        "target_mean": 91372980.84826857,
+        "target_median": 72222222.22222222,
+        "target_p05": 38744318.18181818,
+        "target_p95": 205264521.06666666
+      }
+    ],
+    "district_count": 17,
+    "old_ward_count": 115,
+    "new_ward_count": 80,
+    "road_primary_count": 1438,
+    "road_secondary_count": 1852
+  },
+  "privacy": {
+    "sensitive_columns": [
+      "Chi tiết",
+      "Mã kho",
+      "Mã tài sản",
+      "Số báo cáo định giá",
+      "Thông tin liên hệ"
+    ],
+    "sensitive_values_exported": false
+  },
+  "market_reference": {
+    "official_hcm_2024_land_table_max_vnd_per_m2": 687200000,
+    "official_table_is_not_market_price": true,
+    "comparison_is_provisional_due_to_unit_conflict": true,
+    "source_url": "https://xaydungchinhsach.chinhphu.vn/chi-tiet-bang-gia-dat-dieu-chinh-tai-tp-hcm-ap-dung-tu-31-10-119241022105804049.htm"
+  }
+}

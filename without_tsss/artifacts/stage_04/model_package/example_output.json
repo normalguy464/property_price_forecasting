@@ -1,0 +1,22 @@
+[
+  {
+    "prediction_vnd_m2": 69730688.52913721,
+    "prediction_intervals": {
+      "0.8": {
+        "lower_vnd_m2": 56434879.79427755,
+        "upper_vnd_m2": 86158931.09615791
+      },
+      "0.9": {
+        "lower_vnd_m2": 51956315.45593036,
+        "upper_vnd_m2": 93585714.72973642
+      },
+      "0.95": {
+        "lower_vnd_m2": 47789003.84176624,
+        "upper_vnd_m2": 101746605.32312126
+      }
+    },
+    "status": "automatic",
+    "flags": [],
+    "interval_width_ratio": 0.5970025558604812
+  }
+]

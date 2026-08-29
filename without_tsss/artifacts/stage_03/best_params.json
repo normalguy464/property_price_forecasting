@@ -1,0 +1,30 @@
+{
+  "study_name": "catboost_rolling_mae",
+  "primary_metric": "mae_vnd_m2",
+  "objective_value": 15883865.346325831,
+  "trial_number": 0,
+  "parameters": {
+    "iterations": 700,
+    "depth": 5,
+    "learning_rate": 0.18214744423753768,
+    "l2_leaf_reg": 12.057126287443763,
+    "random_strength": 0.787566024988986,
+    "bagging_temperature": 0.7800932022121826,
+    "border_count": 254
+  },
+  "fold_mae": [
+    15371857.004608132,
+    18245434.005654927,
+    13807246.855811827,
+    15306481.788775105
+  ],
+  "best_iterations_by_fold": [
+    236,
+    664,
+    686,
+    699
+  ],
+  "recommended_full_iterations": 675,
+  "test_rows_used": 0,
+  "target_effective_configurations": 10
+}

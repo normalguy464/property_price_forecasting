@@ -1,0 +1,18 @@
+{
+  "method": "split_conformal_absolute_log_residual",
+  "source": "selected_rolling_oof",
+  "levels": {
+    "0.8": {
+      "qhat_log": 0.18896273564411814,
+      "rows": 3334
+    },
+    "0.9": {
+      "qhat_log": 0.26595655256908657,
+      "rows": 3334
+    },
+    "0.95": {
+      "qhat_log": 0.3503847382356611,
+      "rows": 3334
+    }
+  }
+}

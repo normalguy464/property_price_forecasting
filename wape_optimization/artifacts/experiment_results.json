@@ -1,0 +1,921 @@
+{
+  "selection_population": "rolling_oof_development_only",
+  "test_used_for_selection": false,
+  "target_wape": 0.1,
+  "target_reached": false,
+  "selected": {
+    "name": "blend_equal_current_log_raw",
+    "metrics": {
+      "rows": 3334,
+      "mae_vnd_m2": 13959390.590430884,
+      "rmse_vnd_m2": 28324761.06325312,
+      "rmsle": 0.1713556580711868,
+      "wape": 0.13107596105715047,
+      "mdape": 0.08379694100467883,
+      "within_10pct": 0.5647870425914817,
+      "within_20pct": 0.8248350329934013,
+      "within_30pct": 0.9268146370725855,
+      "mean_error_vnd_m2": -1726662.2548130136
+    },
+    "details": {
+      "kind": "base"
+    }
+  },
+  "raw_residual_iterations": [
+    292,
+    298,
+    300,
+    203
+  ],
+  "top_candidates": [
+    {
+      "name": "blend_equal_current_log_raw",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13959390.590430884,
+        "rmse_vnd_m2": 28324761.06325312,
+        "rmsle": 0.1713556580711868,
+        "wape": 0.13107596105715047,
+        "mdape": 0.08379694100467883,
+        "within_10pct": 0.5647870425914817,
+        "within_20pct": 0.8248350329934013,
+        "within_30pct": 0.9268146370725855,
+        "mean_error_vnd_m2": -1726662.2548130136
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "sequential_global_blend_equal_current_log_raw",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13965375.369835323,
+        "rmse_vnd_m2": 28372177.620191433,
+        "rmsle": 0.17158813007950482,
+        "wape": 0.1311321569710817,
+        "mdape": 0.0834899214114124,
+        "within_10pct": 0.5626874625074985,
+        "within_20pct": 0.8248350329934013,
+        "within_30pct": 0.9274145170965807,
+        "mean_error_vnd_m2": -2167520.567555836
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_equal_current_log_raw",
+        "strategy": "global"
+      }
+    },
+    {
+      "name": "sequential_band_blend_equal_current_log_raw",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13967503.560548099,
+        "rmse_vnd_m2": 28491977.59418188,
+        "rmsle": 0.17160539430321922,
+        "wape": 0.13115214026771507,
+        "mdape": 0.0838068390352911,
+        "within_10pct": 0.5677864427114577,
+        "within_20pct": 0.825134973005399,
+        "within_30pct": 0.9274145170965807,
+        "mean_error_vnd_m2": -2516465.1204814957
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_equal_current_log_raw",
+        "strategy": "band"
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.75_0.99",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13973633.163153484,
+        "rmse_vnd_m2": 28354000.41622189,
+        "rmsle": 0.17206715209261472,
+        "wape": 0.13120969604331964,
+        "mdape": 0.08512574918139079,
+        "within_10pct": 0.5647870425914817,
+        "within_20pct": 0.8302339532093581,
+        "within_30pct": 0.9283143371325735,
+        "mean_error_vnd_m2": -2647529.8864557333
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.75",
+        "factor": 0.99
+      }
+    },
+    {
+      "name": "blend_current25_log75",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13973718.759324832,
+        "rmse_vnd_m2": 28251193.975758754,
+        "rmsle": 0.17159822733735133,
+        "wape": 0.13121049977471103,
+        "mdape": 0.08451543664043144,
+        "within_10pct": 0.563887222555489,
+        "within_20pct": 0.8254349130173965,
+        "within_30pct": 0.9262147570485902,
+        "mean_error_vnd_m2": -1598530.39241649
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "blend_with_tsss_frozen_residual_market_right_0.75",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13973718.759324832,
+        "rmse_vnd_m2": 28251193.975758754,
+        "rmsle": 0.17159822733735133,
+        "wape": 0.13121049977471103,
+        "mdape": 0.08451543664043144,
+        "within_10pct": 0.563887222555489,
+        "within_20pct": 0.8254349130173965,
+        "within_30pct": 0.9262147570485902,
+        "mean_error_vnd_m2": -1598530.39241649
+      },
+      "details": {
+        "kind": "blend",
+        "left": "with_tsss_frozen",
+        "right": "residual_market",
+        "right_weight": 0.75
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.75_1.0",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13973718.759324832,
+        "rmse_vnd_m2": 28251193.975758754,
+        "rmsle": 0.17159822733735133,
+        "wape": 0.13121049977471103,
+        "mdape": 0.08451543664043144,
+        "within_10pct": 0.563887222555489,
+        "within_20pct": 0.8254349130173965,
+        "within_30pct": 0.9262147570485902,
+        "mean_error_vnd_m2": -1598530.39241649
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.75",
+        "factor": 1.0
+      }
+    },
+    {
+      "name": "sequential_global_blend_current25_log75",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13977244.775596427,
+        "rmse_vnd_m2": 28302929.844283003,
+        "rmsle": 0.17186406308122004,
+        "wape": 0.1312436083813159,
+        "mdape": 0.0848607946997201,
+        "within_10pct": 0.5647870425914817,
+        "within_20pct": 0.8278344331133773,
+        "within_30pct": 0.9280143971205759,
+        "mean_error_vnd_m2": -2145496.8601982165
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_current25_log75",
+        "strategy": "global"
+      }
+    },
+    {
+      "name": "sequential_band_blend_current25_log75",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13992281.79168704,
+        "rmse_vnd_m2": 28456239.189264264,
+        "rmsle": 0.17173612775194322,
+        "wape": 0.13138480303610692,
+        "mdape": 0.08424971437580653,
+        "within_10pct": 0.5659868026394721,
+        "within_20pct": 0.8269346130773845,
+        "within_30pct": 0.9268146370725855,
+        "mean_error_vnd_m2": -2536502.238798469
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_current25_log75",
+        "strategy": "band"
+      }
+    },
+    {
+      "name": "sequential_band_position_blend_equal_current_log_raw",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 13999766.575405875,
+        "rmse_vnd_m2": 28526799.671982735,
+        "rmsle": 0.17215855580094452,
+        "wape": 0.13145508369863984,
+        "mdape": 0.08354762475410418,
+        "within_10pct": 0.5674865026994601,
+        "within_20pct": 0.8272345530893821,
+        "within_30pct": 0.9268146370725855,
+        "mean_error_vnd_m2": -2554584.5402090694
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_equal_current_log_raw",
+        "strategy": "band_position"
+      }
+    },
+    {
+      "name": "blend_residual_market_residual_market_raw_mae_right_0.25",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14005205.558443552,
+        "rmse_vnd_m2": 28425663.81416591,
+        "rmsle": 0.1740183425438602,
+        "wape": 0.13150615469090263,
+        "mdape": 0.0850097845187519,
+        "within_10pct": 0.5626874625074985,
+        "within_20pct": 0.8224355128974206,
+        "within_30pct": 0.9235152969406119,
+        "mean_error_vnd_m2": -1694465.655124836
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "sequential_band_blend_residual_market_residual_market_raw_mae_right_0.25",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14005382.559974257,
+        "rmse_vnd_m2": 28487703.35969198,
+        "rmsle": 0.17411800871294314,
+        "wape": 0.1315078167008303,
+        "mdape": 0.08445842453858807,
+        "within_10pct": 0.5635872825434913,
+        "within_20pct": 0.823635272945411,
+        "within_30pct": 0.9253149370125975,
+        "mean_error_vnd_m2": -2304403.0651882244
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_residual_market_residual_market_raw_mae_right_0.25",
+        "strategy": "band"
+      }
+    },
+    {
+      "name": "sequential_global_blend_residual_market_residual_market_raw_mae_right_0.25",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14009212.346046487,
+        "rmse_vnd_m2": 28455636.884985752,
+        "rmsle": 0.17420473408559814,
+        "wape": 0.1315437776467476,
+        "mdape": 0.08510616663889004,
+        "within_10pct": 0.5605878824235153,
+        "within_20pct": 0.8215356928614277,
+        "within_30pct": 0.9253149370125975,
+        "mean_error_vnd_m2": -2082246.5802415258
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_residual_market_residual_market_raw_mae_right_0.25",
+        "strategy": "global"
+      }
+    },
+    {
+      "name": "sequential_band_position_blend_current25_log75",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14016586.279673615,
+        "rmse_vnd_m2": 28463783.246301822,
+        "rmsle": 0.17234562473727097,
+        "wape": 0.13161301744849152,
+        "mdape": 0.08346757135295549,
+        "within_10pct": 0.5641871625674865,
+        "within_20pct": 0.8245350929814037,
+        "within_30pct": 0.9271145770845831,
+        "mean_error_vnd_m2": -2547831.9804762932
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_current25_log75",
+        "strategy": "band_position"
+      }
+    },
+    {
+      "name": "sequential_band_position_blend_residual_market_residual_market_raw_mae_right_0.25",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14027601.727780586,
+        "rmse_vnd_m2": 28589843.42695205,
+        "rmsle": 0.17472009123396312,
+        "wape": 0.1317164503625391,
+        "mdape": 0.08456308729906838,
+        "within_10pct": 0.563887222555489,
+        "within_20pct": 0.8197360527894421,
+        "within_30pct": 0.9250149970005999,
+        "mean_error_vnd_m2": -2419368.5928373947
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_residual_market_residual_market_raw_mae_right_0.25",
+        "strategy": "band_position"
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.75_0.98",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14034147.287598504,
+        "rmse_vnd_m2": 28515170.909011517,
+        "rmsle": 0.1731328955405458,
+        "wape": 0.13177791189542137,
+        "mdape": 0.08565162761457662,
+        "within_10pct": 0.5632873425314937,
+        "within_20pct": 0.8299340131973605,
+        "within_30pct": 0.9295140971805639,
+        "mean_error_vnd_m2": -3696529.380494977
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.75",
+        "factor": 0.98
+      }
+    },
+    {
+      "name": "blend_residual_market_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14034617.799052503,
+        "rmse_vnd_m2": 28555553.984699227,
+        "rmsle": 0.17520012772925647,
+        "wape": 0.1317823299064099,
+        "mdape": 0.08423160437569518,
+        "within_10pct": 0.5620875824835033,
+        "within_20pct": 0.8173365326934613,
+        "within_30pct": 0.9232153569286142,
+        "mean_error_vnd_m2": -1790531.8251044194
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "sequential_global_blend_direct_history_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14037342.653495235,
+        "rmse_vnd_m2": 28706893.239334147,
+        "rmsle": 0.17298826422007474,
+        "wape": 0.131807915759353,
+        "mdape": 0.08347586821755157,
+        "within_10pct": 0.5614877024595081,
+        "within_20pct": 0.8191361727654469,
+        "within_30pct": 0.9226154769046191,
+        "mean_error_vnd_m2": -2329610.2212452996
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_direct_history_residual_market_raw_mae_right_0.5",
+        "strategy": "global"
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.75_1.01",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14037483.213201618,
+        "rmse_vnd_m2": 28207389.746813625,
+        "rmsle": 0.17171317715415,
+        "wape": 0.1318092355876421,
+        "mdape": 0.08723705473374335,
+        "within_10pct": 0.5551889622075585,
+        "within_20pct": 0.8197360527894421,
+        "within_30pct": 0.9238152369526095,
+        "mean_error_vnd_m2": -549530.8983772466
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.75",
+        "factor": 1.01
+      }
+    },
+    {
+      "name": "blend_direct_history_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14037645.928572735,
+        "rmse_vnd_m2": 28652430.146340206,
+        "rmsle": 0.17278963979459208,
+        "wape": 0.1318107634533114,
+        "mdape": 0.08388581324104212,
+        "within_10pct": 0.5596880623875224,
+        "within_20pct": 0.8170365926814637,
+        "within_30pct": 0.9214157168566287,
+        "mean_error_vnd_m2": -1953767.4697337584
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "sequential_global_blend_residual_market_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14039219.801647956,
+        "rmse_vnd_m2": 28600169.274725508,
+        "rmsle": 0.1754409117096517,
+        "wape": 0.13182554181520195,
+        "mdape": 0.08396470909494184,
+        "within_10pct": 0.5581883623275345,
+        "within_20pct": 0.8185362927414517,
+        "within_30pct": 0.9241151769646071,
+        "mean_error_vnd_m2": -2272366.152271089
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_residual_market_residual_market_raw_mae_right_0.5",
+        "strategy": "global"
+      }
+    },
+    {
+      "name": "sequential_band_blend_residual_market_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14041915.283738013,
+        "rmse_vnd_m2": 28625671.92008767,
+        "rmsle": 0.1754435615268862,
+        "wape": 0.13185085186746948,
+        "mdape": 0.08390214012716171,
+        "within_10pct": 0.5617876424715057,
+        "within_20pct": 0.8191361727654469,
+        "within_30pct": 0.9235152969406119,
+        "mean_error_vnd_m2": -2366946.966566892
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_residual_market_residual_market_raw_mae_right_0.5",
+        "strategy": "band"
+      }
+    },
+    {
+      "name": "sequential_band_blend_direct_history_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14054730.041948672,
+        "rmse_vnd_m2": 28800548.086820178,
+        "rmsle": 0.17293067318887362,
+        "wape": 0.13197117995323338,
+        "mdape": 0.08354204140919155,
+        "within_10pct": 0.5602879424115177,
+        "within_20pct": 0.8200359928014397,
+        "within_30pct": 0.9235152969406119,
+        "mean_error_vnd_m2": -2542350.959473023
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_direct_history_residual_market_raw_mae_right_0.5",
+        "strategy": "band"
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.5_0.99",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14058236.84754449,
+        "rmse_vnd_m2": 28766177.55871347,
+        "rmsle": 0.17156001418588257,
+        "wape": 0.13200410817533123,
+        "mdape": 0.08554359702546872,
+        "within_10pct": 0.5596880623875224,
+        "within_20pct": 0.8272345530893821,
+        "within_30pct": 0.9292141571685663,
+        "mean_error_vnd_m2": -2647659.484654259
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.5",
+        "factor": 0.99
+      }
+    },
+    {
+      "name": "sequential_band_position_blend_residual_market_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14059958.814330323,
+        "rmse_vnd_m2": 28693318.214159496,
+        "rmsle": 0.17595363470194747,
+        "wape": 0.1320202771083444,
+        "mdape": 0.085134811233597,
+        "within_10pct": 0.5614877024595081,
+        "within_20pct": 0.8167366526694662,
+        "within_30pct": 0.9235152969406119,
+        "mean_error_vnd_m2": -2452327.8852154594
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_residual_market_residual_market_raw_mae_right_0.5",
+        "strategy": "band_position"
+      }
+    },
+    {
+      "name": "sequential_band_position_blend_direct_history_residual_market_raw_mae_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14069150.420429273,
+        "rmse_vnd_m2": 28884667.487415295,
+        "rmsle": 0.17333355864925146,
+        "wape": 0.13210658450086804,
+        "mdape": 0.08458024199272854,
+        "within_10pct": 0.562387522495501,
+        "within_20pct": 0.8182363527294542,
+        "within_30pct": 0.9241151769646071,
+        "mean_error_vnd_m2": -2645480.488348706
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "blend_direct_history_residual_market_raw_mae_right_0.5",
+        "strategy": "band_position"
+      }
+    },
+    {
+      "name": "blend_with_tsss_frozen_residual_market_right_0.5",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14070496.433476705,
+        "rmse_vnd_m2": 28655305.178227376,
+        "rmsle": 0.17110065608495462,
+        "wape": 0.13211922330144063,
+        "mdape": 0.08538956613302728,
+        "within_10pct": 0.5581883623275345,
+        "within_20pct": 0.8209358128374326,
+        "within_30pct": 0.9277144571085782,
+        "mean_error_vnd_m2": -1598661.2996877276
+      },
+      "details": {
+        "kind": "blend",
+        "left": "with_tsss_frozen",
+        "right": "residual_market",
+        "right_weight": 0.5
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.5_1.0",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14070496.433476705,
+        "rmse_vnd_m2": 28655305.178227376,
+        "rmsle": 0.17110065608495462,
+        "wape": 0.13211922330144063,
+        "mdape": 0.08538956613302728,
+        "within_10pct": 0.5581883623275345,
+        "within_20pct": 0.8209358128374326,
+        "within_30pct": 0.9277144571085782,
+        "mean_error_vnd_m2": -1598661.2996877276
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.5",
+        "factor": 1.0
+      }
+    },
+    {
+      "name": "calibrated_blend_with_tsss_frozen_residual_market_right_0.5_0.98",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14109899.833922105,
+        "rmse_vnd_m2": 28934235.496958274,
+        "rmsle": 0.1726179186619304,
+        "wape": 0.13248921356346832,
+        "mdape": 0.08683936454867958,
+        "within_10pct": 0.5596880623875224,
+        "within_20pct": 0.826634673065387,
+        "within_30pct": 0.9322135572885423,
+        "mean_error_vnd_m2": -3696657.669620789
+      },
+      "details": {
+        "kind": "global_factor",
+        "base": "blend_with_tsss_frozen_residual_market_right_0.5",
+        "factor": 0.98
+      }
+    },
+    {
+      "name": "sequential_band_residual_market",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14113318.562237108,
+        "rmse_vnd_m2": 28615605.68890399,
+        "rmsle": 0.17432041865007533,
+        "wape": 0.13252131475703974,
+        "mdape": 0.0855584835828369,
+        "within_10pct": 0.5644871025794841,
+        "within_20pct": 0.8212357528494301,
+        "within_30pct": 0.9244151169766047,
+        "mean_error_vnd_m2": -2336437.0181257236
+      },
+      "details": {
+        "kind": "sequential_correction",
+        "base": "residual_market",
+        "strategy": "band"
+      }
+    }
+  ],
+  "single_models": [
+    {
+      "name": "with_tsss_frozen",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14834391.330287436,
+        "rmse_vnd_m2": 31353278.70058556,
+        "rmsle": 0.1767696826773289,
+        "wape": 0.13929204772364406,
+        "mdape": 0.09207800682452234,
+        "within_10pct": 0.5350929814037193,
+        "within_20pct": 0.8071385722855429,
+        "within_30pct": 0.9238152369526095,
+        "mean_error_vnd_m2": -1598923.1142302032
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "direct_history",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14499656.352502719,
+        "rmse_vnd_m2": 30757483.652624767,
+        "rmsle": 0.1739526375414026,
+        "wape": 0.13614895142382047,
+        "mdape": 0.08815767250977197,
+        "within_10pct": 0.5452909418116376,
+        "within_20pct": 0.8098380323935213,
+        "within_30pct": 0.9238152369526095,
+        "mean_error_vnd_m2": -1924870.774403931
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "residual_market",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14113744.820153778,
+        "rmse_vnd_m2": 28526646.517365154,
+        "rmsle": 0.17433267785984463,
+        "wape": 0.13252531723592476,
+        "mdape": 0.08634167419369256,
+        "within_10pct": 0.5593881223755249,
+        "within_20pct": 0.8179364127174565,
+        "within_30pct": 0.9250149970005999,
+        "mean_error_vnd_m2": -1598399.4851452524
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "residual_hybrid",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14897960.909698185,
+        "rmse_vnd_m2": 30325986.873641107,
+        "rmsle": 0.17797554579983235,
+        "wape": 0.13988895370326287,
+        "mdape": 0.09242246384291763,
+        "within_10pct": 0.5377924415116977,
+        "within_20pct": 0.8062387522495501,
+        "within_30pct": 0.9199160167966407,
+        "mean_error_vnd_m2": -1326619.3370944203
+      },
+      "details": {
+        "kind": "base"
+      }
+    },
+    {
+      "name": "residual_market_raw_mae",
+      "metrics": {
+        "rows": 3334,
+        "mae_vnd_m2": 14500433.445004694,
+        "rmse_vnd_m2": 29490333.30789405,
+        "rmsle": 0.1819185339921708,
+        "wape": 0.13615624817118682,
+        "mdape": 0.08669531160317057,
+        "within_10pct": 0.5593881223755249,
+        "within_20pct": 0.8050389922015597,
+        "within_30pct": 0.9148170365926814,
+        "mean_error_vnd_m2": -1982664.1650635854
+      },
+      "details": {
+        "kind": "base"
+      }
+    }
+  ],
+  "feature_count": 200,
+  "categorical_features": [
+    "district",
+    "ward_old",
+    "ward_new",
+    "road",
+    "road_segment",
+    "price_position",
+    "land_use",
+    "plot_shape",
+    "business_advantage"
+  ],
+  "numeric_features": [
+    "area_m2",
+    "frontage_m",
+    "length_m",
+    "frontage_count",
+    "distance_to_main_road_m",
+    "alley_width_m",
+    "construction_count",
+    "plot_rectangularity",
+    "frontage_length_ratio",
+    "log_area_m2",
+    "log_frontage_m",
+    "log_length_m",
+    "log_distance_to_main_road_m",
+    "log_alley_width_m",
+    "is_direct_main_road",
+    "ward_old_missing",
+    "road_segment_missing",
+    "other_is_none",
+    "other_dead_end_alley",
+    "other_road_or_alley_facing",
+    "other_park_opposite",
+    "other_near_tomb",
+    "other_near_temple",
+    "other_planning_issue",
+    "other_unrecognized_area",
+    "other_main_axis",
+    "effective_year",
+    "effective_month",
+    "effective_quarter",
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "quality_geometry_ratio_low",
+    "quality_geometry_ratio_high",
+    "quality_area_outside_review_range",
+    "quality_frontage_outside_review_range",
+    "quality_length_outside_review_range",
+    "quality_access_outside_review_range",
+    "market_road_count_90d",
+    "market_road_raw_median_90d",
+    "market_road_estimated_median_90d",
+    "market_road_estimated_p25_90d",
+    "market_road_estimated_p75_90d",
+    "market_road_age_min_90d",
+    "market_ward_count_90d",
+    "market_ward_raw_median_90d",
+    "market_ward_estimated_median_90d",
+    "market_ward_estimated_p25_90d",
+    "market_ward_estimated_p75_90d",
+    "market_ward_age_min_90d",
+    "market_district_count_90d",
+    "market_district_raw_median_90d",
+    "market_district_estimated_median_90d",
+    "market_district_estimated_p25_90d",
+    "market_district_estimated_p75_90d",
+    "market_district_age_min_90d",
+    "market_backoff_raw_median_90d",
+    "market_backoff_estimated_median_90d",
+    "market_backoff_count_90d",
+    "market_backoff_level_90d",
+    "market_district_transaction_count_90d",
+    "market_district_transaction_raw_median_90d",
+    "market_district_listing_count_90d",
+    "market_district_listing_raw_median_90d",
+    "market_road_count_180d",
+    "market_road_raw_median_180d",
+    "market_road_estimated_median_180d",
+    "market_road_estimated_p25_180d",
+    "market_road_estimated_p75_180d",
+    "market_road_age_min_180d",
+    "market_ward_count_180d",
+    "market_ward_raw_median_180d",
+    "market_ward_estimated_median_180d",
+    "market_ward_estimated_p25_180d",
+    "market_ward_estimated_p75_180d",
+    "market_ward_age_min_180d",
+    "market_district_count_180d",
+    "market_district_raw_median_180d",
+    "market_district_estimated_median_180d",
+    "market_district_estimated_p25_180d",
+    "market_district_estimated_p75_180d",
+    "market_district_age_min_180d",
+    "market_backoff_raw_median_180d",
+    "market_backoff_estimated_median_180d",
+    "market_backoff_count_180d",
+    "market_backoff_level_180d",
+    "market_district_transaction_count_180d",
+    "market_district_transaction_raw_median_180d",
+    "market_district_listing_count_180d",
+    "market_district_listing_raw_median_180d",
+    "market_road_count_365d",
+    "market_road_raw_median_365d",
+    "market_road_estimated_median_365d",
+    "market_road_estimated_p25_365d",
+    "market_road_estimated_p75_365d",
+    "market_road_age_min_365d",
+    "market_ward_count_365d",
+    "market_ward_raw_median_365d",
+    "market_ward_estimated_median_365d",
+    "market_ward_estimated_p25_365d",
+    "market_ward_estimated_p75_365d",
+    "market_ward_age_min_365d",
+    "market_district_count_365d",
+    "market_district_raw_median_365d",
+    "market_district_estimated_median_365d",
+    "market_district_estimated_p25_365d",
+    "market_district_estimated_p75_365d",
+    "market_district_age_min_365d",
+    "market_backoff_raw_median_365d",
+    "market_backoff_estimated_median_365d",
+    "market_backoff_count_365d",
+    "market_backoff_level_365d",
+    "market_district_transaction_count_365d",
+    "market_district_transaction_raw_median_365d",
+    "market_district_listing_count_365d",
+    "market_district_listing_raw_median_365d",
+    "comparable_count_365d",
+    "comparable_weighted_raw_price_365d",
+    "comparable_weighted_estimated_price_365d",
+    "comparable_best_distance_365d",
+    "comparable_weighted_age_days_365d",
+    "comparable_same_road_share_365d",
+    "comparable_same_ward_share_365d",
+    "comparable_estimated_mad_365d",
+    "history_road_count_90d",
+    "history_road_median_90d",
+    "history_road_p25_90d",
+    "history_road_p75_90d",
+    "history_road_age_min_90d",
+    "history_ward_count_90d",
+    "history_ward_median_90d",
+    "history_ward_p25_90d",
+    "history_ward_p75_90d",
+    "history_ward_age_min_90d",
+    "history_district_count_90d",
+    "history_district_median_90d",
+    "history_district_p25_90d",
+    "history_district_p75_90d",
+    "history_district_age_min_90d",
+    "history_backoff_median_90d",
+    "history_backoff_count_90d",
+    "history_backoff_level_90d",
+    "history_road_count_180d",
+    "history_road_median_180d",
+    "history_road_p25_180d",
+    "history_road_p75_180d",
+    "history_road_age_min_180d",
+    "history_ward_count_180d",
+    "history_ward_median_180d",
+    "history_ward_p25_180d",
+    "history_ward_p75_180d",
+    "history_ward_age_min_180d",
+    "history_district_count_180d",
+    "history_district_median_180d",
+    "history_district_p25_180d",
+    "history_district_p75_180d",
+    "history_district_age_min_180d",
+    "history_backoff_median_180d",
+    "history_backoff_count_180d",
+    "history_backoff_level_180d",
+    "history_road_count_365d",
+    "history_road_median_365d",
+    "history_road_p25_365d",
+    "history_road_p75_365d",
+    "history_road_age_min_365d",
+    "history_ward_count_365d",
+    "history_ward_median_365d",
+    "history_ward_p25_365d",
+    "history_ward_p75_365d",
+    "history_ward_age_min_365d",
+    "history_district_count_365d",
+    "history_district_median_365d",
+    "history_district_p25_365d",
+    "history_district_p75_365d",
+    "history_district_age_min_365d",
+    "history_backoff_median_365d",
+    "history_backoff_count_365d",
+    "history_backoff_level_365d",
+    "history_asset_count",
+    "history_asset_last_price",
+    "history_asset_age_days",
+    "history_asset_previous_log_trend",
+    "market_anchor",
+    "history_anchor",
+    "hybrid_anchor",
+    "log_market_anchor",
+    "log_history_anchor",
+    "log_hybrid_anchor",
+    "market_history_log_gap",
+    "market_anchor_missing",
+    "history_anchor_missing"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "selected_model": "catboost_log",
+  "selection_basis": "pooled rolling MAPE with WAPE as tie breaker",
+  "rolling_metrics": {
+    "rows": 12872,
+    "mae_vnd_m2": 3588068.7229701043,
+    "rmse_vnd_m2": 11003074.071106195,
+    "wape": 0.03268473042929823,
+    "mape": 0.02671825002848648,
+    "mdape": 0.01809515471512879,
+    "within_10pct": 0.9719546302050963,
+    "within_20pct": 0.9937072715972654
+  },
+  "test_metrics": {
+    "rows": 3706,
+    "mae_vnd_m2": 4920847.21188318,
+    "rmse_vnd_m2": 20729341.35074755,
+    "wape": 0.04099105595683283,
+    "mape": 0.029119508045375973,
+    "mdape": 0.01908854906534946,
+    "within_10pct": 0.9654614139233675,
+    "within_20pct": 0.9910955207771182
+  },
+  "test_metrics_by_asset_history": {
+    "seen_in_development": {
+      "rows": 3706,
+      "mae_vnd_m2": 4920847.21188318,
+      "rmse_vnd_m2": 20729341.35074755,
+      "wape": 0.04099105595683283,
+      "mape": 0.029119508045375973,
+      "mdape": 0.01908854906534946,
+      "within_10pct": 0.9654614139233675,
+      "within_20pct": 0.9910955207771182
+    }
+  },
+  "test_is_temporal_holdout_not_used_for_selection": true,
+  "target": "target_price_vnd_m2",
+  "target_source_column": "Đơn giá quyền sử dụng đất (đ/m2)1",
+  "transaction_status_used_as_feature": false,
+  "parameters": {
+    "iterations": 600,
+    "depth": 6,
+    "learning_rate": 0.08,
+    "l2_leaf_reg": 8.0,
+    "random_strength": 1.0,
+    "bagging_temperature": 1.0,
+    "border_count": 128,
+    "max_ctr_complexity": 1,
+    "rsm": 0.8,
+    "early_stopping_rounds": 50,
+    "thread_count": 4,
+    "training_variant": "catboost_log"
+  },
+  "model_path": "artifacts/stage_03/model/catboost.cbm",
+  "model_sha256": "9802dc70f2010fe404ca85575578f5a54a093041f1a7b17d810c89b5c113cbdf",
+  "development_rows": 23746,
+  "test_rows": 3706
+}

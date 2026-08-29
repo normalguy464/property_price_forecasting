@@ -1,0 +1,40 @@
+{
+  "target": "TSTĐ unit land price at as_of_date",
+  "unit": "VND/m2",
+  "required_tstd_inputs": [
+    "as_of_date",
+    "district",
+    "ward_new",
+    "road",
+    "price_position",
+    "land_use",
+    "plot_shape",
+    "business_advantage",
+    "area_m2",
+    "frontage_m",
+    "length_m",
+    "frontage_count",
+    "distance_to_main_road_m",
+    "alley_width_m",
+    "construction_count"
+  ],
+  "optional_tstd_inputs": [
+    "ward_old",
+    "road_segment",
+    "other_factors"
+  ],
+  "forbidden_tstd_inputs": [
+    "target_price_vnd_m2",
+    "target_log1p",
+    "TSSS",
+    "Giá trị định giá",
+    "Giá trị đề xuất",
+    "Đơn giá quyền sử dụng đất (đ/m2)"
+  ],
+  "required_market_source": "TSSS rows with market date and availability date",
+  "tsss_as_target_allowed": false,
+  "same_report_tsss_allowed": false,
+  "supported_as_of_start": "2025-05-01",
+  "supported_as_of_end": "2025-07-31",
+  "low_market_coverage_action": "manual_review"
+}

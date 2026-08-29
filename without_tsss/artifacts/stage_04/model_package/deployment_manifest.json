@@ -1,0 +1,17 @@
+{
+  "package_version": "1.0.0-stage4",
+  "model": "ridge",
+  "model_path": "artifacts/stage_03/model/ridge_model.joblib",
+  "model_sha256": "a5794878956eb7996103293b6313346b770cbdb9fe0585d6aac73d5d5ca61ca0",
+  "target_transform": "log1p",
+  "parameters": {
+    "alpha": 1.0,
+    "target_transform": "log1p"
+  },
+  "calibration_path": "artifacts/stage_04/calibration.json",
+  "domain_profile_path": "artifacts/stage_04/domain_profile.json",
+  "inference_contract_path": "artifacts/stage_04/model_package/inference_contract.json",
+  "supported_as_of_start": "2025-05-01",
+  "supported_as_of_end": "2025-07-31",
+  "accepted_on_locked_test": true
+}

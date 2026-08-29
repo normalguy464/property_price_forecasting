@@ -1,0 +1,22 @@
+[
+  {
+    "as_of_date": "2025-07-15",
+    "district": "Thành phố Thủ Đức",
+    "ward_old": "Phường Phú Hữu",
+    "ward_new": "Phường Long Trường",
+    "road": "Nguyễn Duy Trinh - Quận 9 cũ",
+    "road_segment": "Trọn đường",
+    "price_position": "VT2",
+    "land_use": "Đất ở đô thị",
+    "plot_shape": "Cân đối",
+    "business_advantage": "Trung bình",
+    "area_m2": 80.4,
+    "frontage_m": 4.7,
+    "length_m": 17.06,
+    "frontage_count": 1,
+    "distance_to_main_road_m": 100,
+    "alley_width_m": 7,
+    "construction_count": 1,
+    "other_factors": "Không"
+  }
+]
