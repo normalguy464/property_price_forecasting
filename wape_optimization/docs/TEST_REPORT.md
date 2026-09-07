@@ -2,12 +2,14 @@
 
 ## Bổ sung comparable retrieval
 
-Lần chạy sau khi thêm retrieval: 12/12 test đạt trong 1,170 giây.
+Lần chạy sau khi thêm backtest Top-3: 15/15 test đạt trong 0,690 giây.
 
 - Candidate chỉ được lấy khi ngày thị trường và ngày có sẵn nhỏ hơn nghiêm ngặt ngày định giá.
 - `report_reference` trùng bị loại, số lượng ngoài 3–5 và ngày ngoài phạm vi kiểm chứng bị từ chối.
 - Output không có mã kho, mã tài sản, chi tiết hoặc thông tin liên hệ.
 - Smoke test CLI với `Train_noi.xlsx` đã hoàn tất; không làm thay đổi model ensemble, metric hoặc artifact benchmark.
+- Artifact báo cáo 7.025 TSTĐ tái tính được WAPE/MAPE từ audit row-level và không chứa trường định danh nhạy cảm.
+- Artifact Top-3 tái tính được metric độc lập và không ghi đè artifact Top-5.
 
 Ngày chạy: 13/08/2026.
 

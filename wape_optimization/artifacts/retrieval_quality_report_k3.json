@@ -1,0 +1,169 @@
+{
+  "scope": {
+    "target_rows": 7025,
+    "market_source_rows_after_cleaning": 27425,
+    "top_k": 3,
+    "maximum_market_window_days": 365,
+    "historical_evaluation": true
+  },
+  "leakage_guards": [
+    "market_date_strictly_before_target",
+    "availability_date_strictly_before_target",
+    "same_report_excluded",
+    "maximum_365_day_market_window"
+  ],
+  "coverage": {
+    "rows_with_at_least_one_tsss": 7010,
+    "coverage_rate": 0.997864768683274,
+    "rows_with_full_top_k": 7008,
+    "full_top_k_rate": 0.9997146932952924,
+    "district_fallback_rows": 20
+  },
+  "score": {
+    "top1": {
+      "min": 16.511572388028537,
+      "p25": 66.58975137783945,
+      "median": 83.76575549768455,
+      "p75": 91.07300749547682,
+      "p90": 94.82785251575193,
+      "max": 99.98287817828
+    },
+    "top_k_mean": {
+      "min": 15.591511853274355,
+      "p25": 62.0792245176575,
+      "median": 79.76186042870475,
+      "p75": 88.79574116470621,
+      "p90": 93.16420958531408,
+      "max": 99.70531556982088
+    },
+    "top_k_min": {
+      "min": 14.42885333921535,
+      "p25": 56.70365451084827,
+      "median": 76.22377858660866,
+      "p75": 87.07093528309974,
+      "p90": 92.03590766779041,
+      "max": 99.5526747585967
+    },
+    "band_counts": {
+      "at_least_80": 3473,
+      "60_to_80": 1944,
+      "below_60": 1593
+    }
+  },
+  "candidate_quality": {
+    "mean_age_days": 98.21540656205421,
+    "mean_share_older_than_threshold": 0.1841654778887304,
+    "mean_same_road_share": 0.8288635282929149,
+    "mean_same_ward_share": 0.1631478839752734,
+    "mean_same_district_share": 0.007275320970042796,
+    "mean_cross_district_share": 0.0007132667617689016,
+    "mean_price_position_match_share": 0.8781264859724204,
+    "mean_business_advantage_match_share": 0.938563956252972,
+    "mean_land_use_match_share": 0.8597242035187826,
+    "mean_plot_shape_match_share": 0.9159296243461722,
+    "mean_duplicate_candidate_share": 0.040846409890632436,
+    "mean_raw_price_relative_spread": 0.11032614980719557,
+    "mean_estimated_price_relative_spread": 0.10737959907643291
+  },
+  "historical_price_backtest": {
+    "weighted_raw_top_k": {
+      "rows": 7010,
+      "mae_vnd_m2": 30153848.94306189,
+      "wape": 0.2806062283658894,
+      "mape": 0.3109300741989766,
+      "mdape": 0.23765424240186278,
+      "within_10pct": 0.2057061340941512,
+      "within_20pct": 0.4248216833095578,
+      "within_30pct": 0.6094151212553495
+    },
+    "weighted_estimated_top_k": {
+      "rows": 7010,
+      "mae_vnd_m2": 24638527.0274501,
+      "wape": 0.2292816467549023,
+      "mape": 0.2484668747205822,
+      "mdape": 0.17597091697565928,
+      "within_10pct": 0.304564907275321,
+      "within_20pct": 0.5470756062767475,
+      "within_30pct": 0.7144079885877318
+    },
+    "by_mean_score_band": {
+      "below_60": {
+        "rows": 1593,
+        "mean_score": 49.9655198573765,
+        "weighted_raw": {
+          "rows": 1593,
+          "mae_vnd_m2": 47789404.082939096,
+          "wape": 0.3596648915005042,
+          "mape": 0.41600793373317735,
+          "mdape": 0.2954487162395904,
+          "within_10pct": 0.16509730069052103,
+          "within_20pct": 0.33584431889516636,
+          "within_30pct": 0.5109855618330195
+        },
+        "weighted_estimated": {
+          "rows": 1593,
+          "mae_vnd_m2": 42243366.4975316,
+          "wape": 0.31792519951875337,
+          "mape": 0.3549062967749631,
+          "mdape": 0.2508055637659594,
+          "within_10pct": 0.21343377275580666,
+          "within_20pct": 0.421217827997489,
+          "within_30pct": 0.5718769617074702
+        }
+      },
+      "60_to_80": {
+        "rows": 1944,
+        "mean_score": 70.94095950820613,
+        "weighted_raw": {
+          "rows": 1944,
+          "mae_vnd_m2": 30482206.82633673,
+          "wape": 0.2670786484137384,
+          "mape": 0.3235112667881102,
+          "mdape": 0.2424036705871428,
+          "within_10pct": 0.2021604938271605,
+          "within_20pct": 0.4228395061728395,
+          "within_30pct": 0.5853909465020576
+        },
+        "weighted_estimated": {
+          "rows": 1944,
+          "mae_vnd_m2": 24608594.942918297,
+          "wape": 0.21561530351658054,
+          "mape": 0.2597227677838704,
+          "mdape": 0.18499580883382205,
+          "within_10pct": 0.28858024691358025,
+          "within_20pct": 0.5267489711934157,
+          "within_30pct": 0.6826131687242798
+        }
+      },
+      "at_least_80": {
+        "rows": 3473,
+        "mean_score": 88.80667947815522,
+        "weighted_raw": {
+          "rows": 3473,
+          "mae_vnd_m2": 21880953.157599553,
+          "wape": 0.2376590191460978,
+          "mape": 0.2556905496866652,
+          "mdape": 0.21561560465262336,
+          "within_10pct": 0.2263173049236971,
+          "within_20pct": 0.4667434494673193,
+          "within_30pct": 0.6680103656780881
+        },
+        "weighted_estimated": {
+          "rows": 3473,
+          "mae_vnd_m2": 16580271.541268118,
+          "wape": 0.1800858967748015,
+          "mape": 0.1933446589279933,
+          "mdape": 0.14900404247069965,
+          "within_10pct": 0.3553124100201555,
+          "within_20pct": 0.6161819752375468,
+          "within_30pct": 0.7975813417794414
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "Score measures rule similarity, not verified valuation accuracy.",
+    "Historical price backtest uses target labels only for evaluation and never as retrieval input.",
+    "Weighted comparable prices are diagnostic baselines, not the WAPE ensemble prediction or an approved adjusted valuation."
+  ]
+}

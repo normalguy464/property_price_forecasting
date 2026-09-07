@@ -56,3 +56,10 @@ Tất cả file dưới đây chỉ thuộc `wape_optimization`; hai pipeline ch
 - `docs/COMPARABLE_RETRIEVAL.md`: phạm vi, ràng buộc và cách chạy.
 - `configs/experiments.json`: thêm cấu hình retrieval tách khỏi cấu hình ensemble.
 - `tests/test_wape_optimization.py`: thêm hai kiểm thử retrieval về as-of, cùng báo cáo, riêng tư, xếp hạng và input không hợp lệ.
+- `src/property_price_forecasting_wape/retrieval_report.py`: tính coverage, score, chất lượng candidate và backtest comparable toàn tập TSTĐ.
+- `scripts/run_retrieval_quality_report.py`: tạo artifact báo cáo retrieval.
+- `docs/RETRIEVAL_QUALITY_REPORT.md`: định nghĩa metric và cách diễn giải report.
+- `docs/RETRIEVAL_QUALITY_RESULTS.md`: kết quả chạy đầy đủ 7.025 TSTĐ và kết luận nghiệp vụ.
+- `artifacts/retrieval_quality_report.json`: metric retrieval tổng hợp có thể tái lập.
+- `artifacts/retrieval_quality_rows.jsonl.gz`: audit row-level không định danh phục vụ tái tính metric.
+- `artifacts/retrieval_quality_report_k3.json` và `retrieval_quality_rows_k3.jsonl.gz`: backtest Top-3 tách biệt để so sánh với Top-5.

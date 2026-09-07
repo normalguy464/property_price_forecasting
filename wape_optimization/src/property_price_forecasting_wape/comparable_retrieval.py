@@ -136,8 +136,9 @@ def log_ratio(left, right):
     return abs(math.log(left / right))
 
 
-def candidate_distance(target, market, indices, age):
-    arrays = {name: market[name].to_numpy() for name in market.columns}
+def candidate_distance(target, market, indices, age, arrays=None):
+    if arrays is None:
+        arrays = {name: market[name].to_numpy() for name in market.columns}
     distance = age[indices] / 365.0 * 0.25
     same_road = arrays["road"][indices] == target["road"]
     same_ward = arrays["ward"][indices] == target["ward"]

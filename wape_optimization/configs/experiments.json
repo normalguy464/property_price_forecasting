@@ -42,5 +42,10 @@
     "maximum_count": 5,
     "supported_as_of_start": "2025-05-01",
     "supported_as_of_end": "2025-07-31"
+  },
+  "retrieval_quality_report": {
+    "top_k": 5,
+    "score_bands": [60, 80],
+    "older_than_days": 180
   }
 }
