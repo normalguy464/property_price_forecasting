@@ -1,5 +1,14 @@
 # Báo cáo kiểm thử
 
+## Bổ sung comparable retrieval
+
+Lần chạy sau khi thêm retrieval: 12/12 test đạt trong 1,170 giây.
+
+- Candidate chỉ được lấy khi ngày thị trường và ngày có sẵn nhỏ hơn nghiêm ngặt ngày định giá.
+- `report_reference` trùng bị loại, số lượng ngoài 3–5 và ngày ngoài phạm vi kiểm chứng bị từ chối.
+- Output không có mã kho, mã tài sản, chi tiết hoặc thông tin liên hệ.
+- Smoke test CLI với `Train_noi.xlsx` đã hoàn tất; không làm thay đổi model ensemble, metric hoặc artifact benchmark.
+
 Ngày chạy: 13/08/2026.
 
 Lệnh:

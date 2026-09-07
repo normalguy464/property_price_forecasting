@@ -29,5 +29,18 @@
     "thread_count": 4
   },
   "blend_weights": [0.25, 0.5, 0.75],
-  "target_wape": 0.10
+  "target_wape": 0.10,
+  "comparable_retrieval": {
+    "source_file": "../../Train_noi.xlsx",
+    "source_sheet": "Sheet1",
+    "market_date_format": "%d/%m/%Y",
+    "maximum_market_age_at_collection_days": 730,
+    "market_unit_price_min": 5000000,
+    "market_unit_price_max": 2000000000,
+    "maximum_market_window_days": 365,
+    "minimum_count": 3,
+    "maximum_count": 5,
+    "supported_as_of_start": "2025-05-01",
+    "supported_as_of_end": "2025-07-31"
+  }
 }

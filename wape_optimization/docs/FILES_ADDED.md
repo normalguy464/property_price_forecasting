@@ -49,3 +49,10 @@ Tất cả file dưới đây chỉ thuộc `wape_optimization`; hai pipeline ch
 | `docs/DECISIONS.md` | Nhật ký quyết định |
 | `docs/ISSUES_AND_FIXES.md` | Lỗi, rủi ro và cách xử lý |
 | `docs/FILES_ADDED.md` | Danh sách file và ý nghĩa |
+# Truy xuất TSSS
+
+- `src/property_price_forecasting_wape/comparable_retrieval.py`: retrieval 3–5 TSSS as-of độc lập khỏi ensemble.
+- `scripts/retrieve_comparables.py`: CLI đọc TSTĐ JSON và workbook TSSS, trả JSON candidate.
+- `docs/COMPARABLE_RETRIEVAL.md`: phạm vi, ràng buộc và cách chạy.
+- `configs/experiments.json`: thêm cấu hình retrieval tách khỏi cấu hình ensemble.
+- `tests/test_wape_optimization.py`: thêm hai kiểm thử retrieval về as-of, cùng báo cáo, riêng tư, xếp hạng và input không hợp lệ.

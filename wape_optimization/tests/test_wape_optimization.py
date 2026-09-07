@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from property_price_forecasting_wape.experiments import metrics
+from property_price_forecasting_wape.comparable_retrieval import retrieve_comparables
 from property_price_forecasting_wape.history_features import build_history_features
 
 
@@ -127,6 +128,55 @@ def test_python_files_have_no_comments():
         assert not any(token.type == tokenize.COMMENT for token in tokens)
 
 
+def test_comparable_retrieval_is_asof_ranked_and_private():
+    config = load_json("configs/experiments.json")
+    target = {
+        "as_of_date": "2025-07-15", "report_reference": "same_report", "district": "D", "ward_new": "W", "road": "R", "price_position": "VT2",
+        "land_use": "Đất ở tại đô thị", "plot_shape": "Cân đối", "business_advantage": "Trung bình", "area_m2": 100.0, "frontage_m": 5.0,
+        "length_m": 20.0, "distance_to_main_road_m": 100.0, "alley_width_m": 4.0,
+    }
+    common = {
+        "Phân loại kho": "TSSS", "Diện tích (m2)": 100.0, "Giá giao dịch/rao bán (đ)": 10_000_000_000, "Giá ước tính (đ)": 9_500_000_000,
+        "Thành phố/Quận/Huyện/Thị xã": "D", "Xã/Phường mới": "W", "Đường phố": "R", "Vị trí trong khung giá": "VT2", "Mục đích sử dụng đất": "Đất ở tại đô thị",
+        "Hình dáng": "Cân đối", "Lợi thế kinh doanh": "Trung bình", "Kích thước mặt tiền (m)": 5.0, "Kích thước chiều dài": 20.0,
+        "Khoảng cách đến đường chính (m)": 100.0, "Độ rộng ngõ/ngách nhỏ nhất (Từ đường chính đến BĐS)": 4.0, "Tình trạng giao dịch": "Chưa giao dịch",
+        "Mã kho": "private-warehouse", "Mã tài sản": "private-asset", "Chi tiết": "private-detail", "Thông tin liên hệ": "private-contact",
+    }
+    rows = []
+    for report, market_date, availability_date in [
+        ("eligible_1", "10/07/2025", "11/07/2025"), ("eligible_2", "09/07/2025", "10/07/2025"), ("eligible_3", "08/07/2025", "09/07/2025"),
+        ("same_report", "10/07/2025", "11/07/2025"), ("future_market", "15/07/2025", "14/07/2025"), ("future_availability", "10/07/2025", "15/07/2025"),
+    ]:
+        rows.append({**common, "Số báo cáo định giá": report, "Thời điểm giao dịch/rao bán (đ)": market_date, "Thời điểm hiệu lực": availability_date})
+    output = retrieve_comparables([target], pd.DataFrame(rows), config, 3)[0]
+    assert output["status"] == "automatic"
+    assert output["returned_comparable_count"] == 3
+    assert [item["comparable_reference"] for item in output["comparables"]] == ["TSSS-000002", "TSSS-000003", "TSSS-000004"]
+    assert all(item["market_date"] < target["as_of_date"] for item in output["comparables"])
+    rendered = json.dumps(output, ensure_ascii=False)
+    assert "private-warehouse" not in rendered
+    assert "private-asset" not in rendered
+    assert "private-detail" not in rendered
+    assert "private-contact" not in rendered
+
+
+def test_comparable_retrieval_rejects_stale_dates_and_invalid_counts():
+    config = load_json("configs/experiments.json")
+    target = {
+        "as_of_date": "2025-08-01", "district": "D", "ward_new": "W", "road": "R", "price_position": "VT2", "land_use": "Đất ở tại đô thị",
+        "plot_shape": "Cân đối", "business_advantage": "Trung bình", "area_m2": 100.0, "frontage_m": 5.0, "length_m": 20.0,
+        "distance_to_main_road_m": 100.0, "alley_width_m": 4.0,
+    }
+    output = retrieve_comparables([target], pd.DataFrame(), config, 3)[0]
+    assert output["status"] == "reject"
+    assert output["flags"] == ["unsupported_as_of_date"]
+    try:
+        retrieve_comparables([target], pd.DataFrame(), config, 2)
+    except ValueError:
+        return
+    raise AssertionError("count outside 3-5 must be rejected")
+
+
 def load_tests(loader, tests, pattern):
     suite = unittest.TestSuite()
     functions = [
@@ -140,6 +190,8 @@ def load_tests(loader, tests, pattern):
         test_prediction_intervals_are_ordered,
         test_exported_artifacts_do_not_contain_sensitive_columns,
         test_python_files_have_no_comments,
+        test_comparable_retrieval_is_asof_ranked_and_private,
+        test_comparable_retrieval_rejects_stale_dates_and_invalid_counts,
     ]
     for function in functions:
         suite.addTest(unittest.FunctionTestCase(function))
