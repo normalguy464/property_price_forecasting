@@ -79,5 +79,12 @@
     "border_count": 128,
     "early_stopping_rounds": 50,
     "thread_count": 4
+  },
+  "comparable_retrieval": {
+    "maximum_market_window_days": 365,
+    "minimum_count": 3,
+    "maximum_count": 5,
+    "supported_as_of_start": "2025-05-01",
+    "supported_as_of_end": "2025-07-31"
   }
 }

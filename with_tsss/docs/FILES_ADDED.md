@@ -88,3 +88,11 @@
 | `docs/ENHANCED_WITH_TSSS_EXPERIMENT.md` | Luồng comparable V2, temporal feature, loss và kết quả MAPE |
 | `docs/LEARNED_COMPARABLE_EXPERIMENT.md` | Luồng chọn ba comparable, điều chỉnh, kết quả và giới hạn promote |
 | `docs/TEST_REPORT.md` | Phạm vi và kết quả test |
+# Chức năng đề xuất TSSS
+
+- `src/property_price_forecasting_tsss/comparable_retrieval.py`: lọc as-of và xếp hạng 3–5 TSSS; không phải feature hay model input.
+- `scripts/retrieve_comparables.py`: CLI nhận JSON TSTĐ, workbook TSSS và xuất JSON comparable.
+- `docs/COMPARABLE_RETRIEVAL.md`: luồng, giới hạn, contract và cách chạy.
+- `docs/COMPARABLE_RETRIEVAL_EXAMPLES.md`: năm ví dụ TSTĐ–TSSS as-of, thông tin thuộc tính, giá, score, cờ và nhận xét nghiệp vụ.
+- `configs/pipeline.json`: thêm contract riêng của comparable retrieval, tách khỏi cấu hình thí nghiệm learned comparable.
+- `tests/test_with_tsss_pipeline.py`: thêm hai kiểm thử retrieval về as-of, cùng báo cáo, riêng tư, xếp hạng và input không hợp lệ.

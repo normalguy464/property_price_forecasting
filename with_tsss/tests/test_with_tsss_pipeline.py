@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from property_price_forecasting_tsss.inference import predict_records
+from property_price_forecasting_tsss.comparable_retrieval import retrieve_comparables
 from property_price_forecasting_tsss.market_features import build_market_features
 from property_price_forecasting_tsss.modeling import price_band_sample_weights, regression_metrics
 
@@ -164,6 +165,48 @@ class WithTsssPipelineTests(unittest.TestCase):
         stale = predict_records(example, source, ROOT / self.model_manifest["model_path"], self.model_manifest, self.config, calibration)
         self.assertEqual(stale[0]["status"], "reject")
         self.assertIn("unsupported_as_of_date", stale[0]["flags"])
+
+    def test_comparable_retrieval_is_asof_private_and_ranked(self):
+        target = dict(self.config["example_input"])
+        target["report_reference"] = "same_report"
+        source_rows = []
+        for number, report, market_date, availability_date, area, price in [
+            (1, "eligible_1", "10/07/2025", "11/07/2025", 80.0, 8_000_000_000),
+            (2, "eligible_2", "01/07/2025", "02/07/2025", 82.0, 8_200_000_000),
+            (3, "eligible_3", "20/06/2025", "21/06/2025", 78.0, 7_800_000_000),
+            (4, "same_report", "10/07/2025", "11/07/2025", 80.0, 8_000_000_000),
+            (5, "future_market", "15/07/2025", "14/07/2025", 80.0, 8_000_000_000),
+            (6, "future_availability", "10/07/2025", "15/07/2025", 80.0, 8_000_000_000),
+        ]:
+            source_rows.append({
+                "Phân loại kho": "TSSS", "Số báo cáo định giá": report, "Thời điểm giao dịch/rao bán (đ)": market_date, "Thời điểm hiệu lực": availability_date,
+                "Diện tích (m2)": area, "Giá giao dịch/rao bán (đ)": price, "Giá ước tính (đ)": price * 0.95,
+                "Thành phố/Quận/Huyện/Thị xã": "Thành phố Thủ Đức", "Xã/Phường mới": "Phường Long Trường", "Đường phố": "Nguyễn Duy Trinh - Quận 9 cũ",
+                "Vị trí trong khung giá": "VT2", "Mục đích sử dụng đất": "Đất ở đô thị", "Hình dáng": "Cân đối", "Lợi thế kinh doanh": "Trung bình",
+                "Kích thước mặt tiền (m)": 4.7, "Kích thước chiều dài": 17.06, "Khoảng cách đến đường chính (m)": 100.0,
+                "Độ rộng ngõ/ngách nhỏ nhất (Từ đường chính đến BĐS)": 7.0, "Tình trạng giao dịch": "Đã giao dịch",
+                "Mã kho": f"private-{number}", "Mã tài sản": f"asset-{number}", "Chi tiết": "private address", "Thông tin liên hệ": "private contact",
+            })
+        output = retrieve_comparables([target], pd.DataFrame(source_rows), self.config, 3)[0]
+        self.assertEqual(output["status"], "automatic")
+        self.assertEqual(output["returned_comparable_count"], 3)
+        self.assertEqual([value["comparable_reference"] for value in output["comparables"]], ["TSSS-000002", "TSSS-000003", "TSSS-000004"])
+        self.assertTrue(all(value["market_date"] < target["as_of_date"] for value in output["comparables"]))
+        self.assertTrue(all(value["age_days"] > 0 for value in output["comparables"]))
+        rendered = json.dumps(output, ensure_ascii=False)
+        self.assertNotIn("private-", rendered)
+        self.assertNotIn("asset-", rendered)
+        self.assertNotIn("private address", rendered)
+        self.assertNotIn("private contact", rendered)
+
+    def test_comparable_retrieval_rejects_invalid_request(self):
+        target = dict(self.config["example_input"])
+        target["as_of_date"] = "2025-08-01"
+        output = retrieve_comparables([target], pd.DataFrame(), self.config, 3)[0]
+        self.assertEqual(output["status"], "reject")
+        self.assertEqual(output["flags"], ["unsupported_as_of_date"])
+        with self.assertRaises(ValueError):
+            retrieve_comparables([self.config["example_input"]], pd.DataFrame(), self.config, 2)
 
     def test_python_code_has_no_comments(self):
         for path in list((ROOT / "src").rglob("*.py")) + list((ROOT / "scripts").rglob("*.py")) + list((ROOT / "tests").rglob("*.py")):
